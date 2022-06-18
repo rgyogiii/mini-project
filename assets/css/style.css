@@ -478,6 +478,220 @@ a:hover {
   background-color: #212529;
 }
 
+
+
+/* ---------------------------------------------------------------------------- */
+
+/* 
+* product categories */
+
+.portfolio-caption {
+  padding: 0.75rem;
+  text-align: center;
+  background-color: #ECE8E1;
+  border-left: 1px solid #BDBCB7;
+  border-right: 1px solid #BDBCB7;
+  border-bottom: 1px solid #BDBCB7;  
+}
+
+.portfolio-caption-heading {
+  font-size: 1.15rem;
+  font-family: var(--font-merriweather);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.category-contianer .portfolio-link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  border-left: 1px solid #BDBCB7;
+  border-right: 1px solid #BDBCB7;
+  border-top: 1px solid #BDBCB7; 
+}
+
+.category-contianer .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 120%;
+  height: 115%;
+  transform: translate(-100%, -20px);
+  background: rgb(43, 128, 98, 0.5);
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+  transition: 0.3s;
+}
+
+.category-contianer:hover .portfolio-link .portfolio-hover {
+  transform: translate(-10%, -20px);
+}
+
+/* 
+* Category Filter */
+
+.ctg_flter:hover {
+  cursor: pointer;
+  color: #BDBCB7 !important;
+}
+
+.chckbx {
+  padding-bottom: 2px;
+}
+
+.chckbx:hover {
+  color: #BDBCB7 !important;
+  cursor: pointer;
+}
+
+.frm-chck[type=checkbox]{
+  border-radius: 0.15em;
+}
+
+.frm-chck:checked{
+  background-color: #000000;
+  border-color: #ffffff;
+}
+
+.frm-chck:focus{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.apply_btn {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: transparent;
+}
+
+.mm_range {
+  font-size: 12px;
+}
+
+ /* 
+ *product top sort */
+ .prc_drpbtn,
+ .ctg_txt {
+   color: #000000;
+   width: 150px;
+   font-size: 13px;
+   border: none;
+   cursor: pointer;
+ }
+
+ .prc_drpbtn-border{
+  border: 1px solid #BDBCB7;
+ }
+
+ .prd_cntnt-bg {
+   background-color: transparent;
+   border-radius: 5px;
+   margin: 0px;
+ }
+
+ .ctg_txt:hover {
+   color: #808080;
+ }
+ 
+ .dropbtn {
+  background-color: transparent;
+  color: #000000;
+  font-size: 13px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  text-align: left;
+  position: absolute;
+  font-size: 12px;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: grey;
+}
+
+
+/* 
+ *product side filter */
+
+ .side-bottom-margin{
+  margin-bottom: 0.25rem !important;
+ }
+
+ .filter-title{
+  font-size: 16px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+ }
+
+ .dropbtn-side{
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+
+ }
+
+ .dropdown-content-side {
+  display: block;
+  padding: 10px 0px;
+  background-color: transparent;
+  border: 1px solid #BDBCB7;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.dropdown-content-side a{
+  color: #000000;
+  padding: 8px 14px;
+  text-decoration: none;
+  display: block;
+  background-color: none;
+  
+}
+
+.dropdown-content-side-container{
+  color: #000000;
+  padding: 8px 14px;
+  text-decoration: none;
+  display: block;
+  background-color: none;
+}
+
+
 /**
 * ! Google Login
 **/
@@ -540,7 +754,7 @@ a:hover {
   left: 10px;
   padding: 0.625rem 0;
   font-size: 1rem;
-  color: gray;
+  color: #808080;
   pointer-events: none;
   transition: 0.5s;
 }

@@ -56,3 +56,20 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 })
+
+
+// * Dropdown button
+var dropdown = document.getElementsByClassName("dropbtn-side");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "none") {
+      dropdownContent.style.display = "block";
+    } else {
+      dropdownContent.style.display = "none";
+    }
+  });
+}
