@@ -73,3 +73,38 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+// * toggler icon change 
+
+// * price-range
+btnIcon_priceRange = () => {
+const dropbtnIcon = document.getElementById("icon-price-range")
+
+if (dropbtnIcon.className == "bi bi-chevron-up m-2") {
+  dropbtnIcon.className = "bi bi-chevron-down m-2";
+} else {
+  dropbtnIcon.className = "bi bi-chevron-up m-2";
+}
+}
+
+// * brand
+btnIcon_brand = () => {
+const dropbtnIcon = document.getElementById("icon-brand")
+
+if (dropbtnIcon.className == "bi bi-chevron-up m-2") {
+  dropbtnIcon.className = "bi bi-chevron-down m-2";
+} else {
+  dropbtnIcon.className = "bi bi-chevron-up m-2";
+}
+}
+
+// * rating
+btnIcon_rating = () => {
+  const dropbtnIcon = document.getElementById("icon-rating")
+  
+  if (dropbtnIcon.className == "bi bi-chevron-up m-2") {
+    dropbtnIcon.className = "bi bi-chevron-down m-2";
+  } else {
+    dropbtnIcon.className = "bi bi-chevron-up m-2";
+  }
+  }
