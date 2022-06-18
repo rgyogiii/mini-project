@@ -475,3 +475,18 @@ a:hover{
 .page-footer, .credit-footer{
   background-color: #212529;
 }
+
+/* style for countdown-banner */
+/* general styling */
+#countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
