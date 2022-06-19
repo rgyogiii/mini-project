@@ -692,6 +692,127 @@ a:hover {
 }
 
 
+/* 
+* Login Page */
+
+.mainHead {
+  min-height: 100vh;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(to bottom, rgba(236, 232, 225, 0.1) 40%, rgba(0, 0, 0, 1) 100%), url("/assets/img/bg.svg");
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 475px;
+  margin: auto;
+  padding: 60px 50px 220px;
+  margin-bottom: 120px;
+  border-radius: 5px !important;
+  background-color: #ECE8E1;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+/* .form-textbox-container{
+  height: calc(3.5rem + 2px);
+} */
+
+.form-container{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F9F9F9;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #EDEDED;
+  height: calc(3.5rem + 2px);
+  border: none;
+}
+
+.form-signin input[type="email"]:hover {
+  background-color: #dddddd;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #EDEDED;
+  height: calc(3.5rem + 2px);
+  border: none;
+}
+
+.form-signin input[type="password"]:hover {
+  background-color: #dddddd;
+}
+
+.signin-title {
+  font-family: var(--font-tungsten) !important;
+}
+
+.form-control::placeholder {
+  color: #6c757d !important;
+  font-weight: 700 !important;
+  opacity: 1;
+}
+
+.form-control:focus {
+  border: 0.15rem solid #000000 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.chkbox{
+
+}
+
+.login-chkbox{
+  padding: 8px;
+  margin: 0px 5px;
+}
+
+.login-chkbox[type=checkbox]{
+  border-radius: 0.15em !important;
+  background-color: #EDEDED !important;
+  border: 1px solid #6c757d;
+}
+
+.login-chkbox:hover{
+  cursor: pointer;
+  background-color: #dddddd;
+}
+
+.login-chkbox:checked{
+  background-color: #000000 !important;
+  /* border: 0.15rem solid #000000; */
+}
+
+.login-chkbox:focus{
+  border-color: #000000;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.rememberme-text{
+  font-size: 18px;
+  margin: 5px;
+}
+
 /**
 * ! Google Login
 **/
