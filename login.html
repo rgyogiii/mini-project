@@ -52,6 +52,7 @@
     <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
+<<<<<<< HEAD
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-1 fixed-top d-flex flex-column" id="mainNav">
       <!-- Navbar -->
@@ -74,6 +75,90 @@
 
     
         <!-- page footer -->
+=======
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg p-1 fixed-top d-flex flex-column"
+      id="mainNav"
+    >
+      <!-- Navbar -->
+      <div class="container py-3">
+        <a class="navbar-brand" href="#productBanner"
+          ><img src="./assets/img/logo-white.svg" height="30"
+        /></a>
+
+        <button
+          class="navbar-toggler p-2 border-0 burger"
+          type="button"
+          id="navbarSideCollapse"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="bi bi-list m-2 fw-bold"></i></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- header contianer -->
+    <div class="mainHead pb-5">
+      <div class="container form-contianer p-5">
+        <div class="text-center p-5">
+          <div class="form-signin">
+            <form onsubmit="userSignIn(event)">
+              <h1 class="mb-4 text-start signin-title">Sign In</h1>
+
+              <div class="error-msg p-3 mb-3" id="errorMsgId">
+                <h5 class="text-center signin-title m-0">
+                  Sorry, we can't find an account with this email address.
+                  Please try again or
+                  <a href="#" class="text-decoration-underline"
+                    >create a new account</a
+                  >.
+                </h5>
+              </div>
+
+              <div class="form-textbox-container mb-3">
+                <input
+                  type="email"
+                  name="emailInput"
+                  class="form-control"
+                  id="email"
+                  placeholder="EMAIL"
+                  required
+                />
+              </div>
+              <div class="form-textbox-container my-3">
+                <input
+                  type="password"
+                  name="passwordInput"
+                  class="form-control"
+                  id="pass"
+                  placeholder="PASSWORD"
+                  required
+                />
+              </div>
+
+              <button class="w-100 btn btn-lg btn-dark mt-3 mb-3" type="submit">
+                Sign in
+              </button>
+
+              <div class="chkbox m-3 d-flex justify-content-between">
+                <label>
+                  <input
+                    type="checkbox"
+                    class="form-check-input me-1 login-chkbox"
+                  />
+                  <span class="rememberme-text">Stay signed in</span>
+                </label>
+                <a class="text-end rememberme-text" href="#">Need help?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page footer -->
+>>>>>>> 7cd9ad8abe4555633970f35ab94a7e7b6aa13c4c
     <div class="container-fluid pt-5 page-footer">
       <div class="container">
         <div class="container pt-1">
@@ -184,6 +269,10 @@
     </div>
 
     <!-- javascript -->
+<<<<<<< HEAD
     <script src="./assets/js/style.js"></script>
+=======
+    <script src="./assets/js/login.js"></script>
+>>>>>>> 7cd9ad8abe4555633970f35ab94a7e7b6aa13c4c
   </body>
 </html>
