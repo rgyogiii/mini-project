@@ -307,7 +307,7 @@ a:hover {
 .ellipsis-text {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   padding-left: 15px;
   padding-right: 15px;
