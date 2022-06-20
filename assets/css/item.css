@@ -783,3 +783,7 @@ a:hover{
 .itm-img{
   border-radius: 5px;
 }
+
+.prd-title{
+  font-family: var(--font-tungsten);
+}
