@@ -478,6 +478,21 @@ a:hover {
   background-color: #212529;
 }
 
+<<<<<<< HEAD
+/* style for countdown-banner */
+/* general styling */
+#countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 4.5rem;
+=======
 
 
 /* ---------------------------------------------------------------------------- */
@@ -875,6 +890,9 @@ a:hover {
   background-color: #FF4655;
   border-radius: 5px;
   display: none;
+<<<<<<< HEAD
+>>>>>>> 7cd9ad8abe4555633970f35ab94a7e7b6aa13c4c
+=======
 }
 
 /* 
@@ -916,4 +934,5 @@ a:hover {
   padding: 5px;
   margin-top: 15px;
   font-family: var(--font-tungsten);
+>>>>>>> f6b10285c66dc1452d3ee1c8efeef1b3b2bfa0a4
 }

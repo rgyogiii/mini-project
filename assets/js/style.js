@@ -57,6 +57,31 @@ window.addEventListener('DOMContentLoaded', event => {
 
 })
 
+<<<<<<< HEAD
+// countdown-timer
+const countdown = () => {
+    var countDate = new Date("Jun 30, 2022 23:59:59").getTime();
+    const now = new Date().getTime();
+    const gap = countDate - now;
+
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+    const textDay = Math.floor(gap/day);
+    const textHour = Math.floor((gap%day)/hour);
+    const textMinute = Math.floor((gap%hour)/minute);
+    const textSecond = Math.floor((gap%minute)/second);
+
+    document.getElementById("days").innerText = textDay,
+    document.getElementById("hours").innerText = textHour,
+    document.getElementById("minutes").innerText = textMinute,
+    document.getElementById("seconds").innerText = textSecond;
+} 
+
+setInterval(countdown,1000);
+=======
 
 // * Dropdown button
 var dropdown = document.getElementsByClassName("dropbtn-side");
@@ -109,6 +134,9 @@ btnIcon_rating = () => {
     dropbtnIcon.className = "bi bi-chevron-up m-2";
   }
   }
+<<<<<<< HEAD
+>>>>>>> 7cd9ad8abe4555633970f35ab94a7e7b6aa13c4c
+=======
 
 // * countdown-timer
 const countdown = () => {
@@ -133,3 +161,4 @@ const countdown = () => {
 } 
 
 setInterval(countdown,1000);
+>>>>>>> f6b10285c66dc1452d3ee1c8efeef1b3b2bfa0a4
