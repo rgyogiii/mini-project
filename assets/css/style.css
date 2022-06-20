@@ -885,23 +885,23 @@ a:hover {
   margin-top: 8.53rem;
 }
 
+.img-contnr {
+  width: 100%;
+}
+
 /* countdown timer */
 
 #countdown li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 2.5em;
   list-style-type: none;
-  padding: 1em;
+  padding: 0.5em;
   text-transform: uppercase;
 }
 
 #countdown li span {
   display: block;
-  font-size: 4.5rem;
-}
-
-.timerdisplay{
-  font-size: 72px;
+  font-size: 7rem;
 }
 
 .countdwntimer-container{
@@ -914,5 +914,6 @@ a:hover {
   padding-left: 20px;
   padding-right: 20px;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 15px;
+  font-family: var(--font-tungsten);
 }
