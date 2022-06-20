@@ -84,48 +84,68 @@
 
               <div class="error-msg p-3 mb-3" id="errorMsgId">
                 <h5 class="text-center signin-title m-0">
-                  Sorry, we can't find an account with this email address.
-                  Please try again or
+                  Your account and/or password is incorrect, please try again or
                   <a href="#" class="text-decoration-underline"
                     >create a new account</a
                   >.
                 </h5>
               </div>
 
-              <div class="form-textbox-container mb-3">
+              <div class="form-textbox-container mb-3 form-floating">
                 <input
                   type="email"
                   name="emailInput"
-                  class="form-control"
+                  class="form-control textbox-container"
                   id="email"
                   placeholder="EMAIL"
                   required
                 />
+                <label class="textbox-placeholder" for="email"
+                  >Email address</label
+                >
               </div>
-              <div class="form-textbox-container my-3">
+              <div
+                class="form-textbox-container my-3 form-floating d-flex align-items-center"
+              >
                 <input
                   type="password"
                   name="passwordInput"
-                  class="form-control"
+                  class="form-control textbox-container"
                   id="pass"
                   placeholder="PASSWORD"
                   required
                 />
+                <label class="textbox-placeholder" for="pass">Password</label>
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
               </div>
 
-              <button class="w-100 btn btn-lg btn-dark mt-3 mb-3" type="submit">
+              <button
+                class="w-100 btn btn-lg btn-dark mt-3 mb-2 submit"
+                type="submit"
+                id="submit"
+              >
                 Sign in
               </button>
 
-              <div class="chkbox m-3 d-flex justify-content-between">
+              <div class="rmber-chckbx m-1 d-flex mb-5">
                 <label>
                   <input
                     type="checkbox"
                     class="form-check-input me-1 login-chkbox"
                   />
-                  <span class="rememberme-text">Stay signed in</span>
                 </label>
-                <a class="text-end rememberme-text" href="#">Need help?</a>
+                <span class="rememberme-text me-auto">Stay signed in?</span>
+                <a class="text-end forgot-text" href="#">Forgot Password</a>
+              </div>
+              <div class="pt-5">
+                <a class="signinfooter-text text-uppercase fw-bold" href="#"
+                  >Can't sign in</a
+                >
+              </div>
+              <div>
+                <a class="signinfooter-text text-uppercase fw-bold" href="#"
+                  >Create Account</a
+                >
               </div>
             </form>
           </div>

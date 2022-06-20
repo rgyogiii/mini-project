@@ -74,9 +74,10 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+
 // * toggler icon change 
 
-// * price-range
+// price-range
 btnIcon_priceRange = () => {
 const dropbtnIcon = document.getElementById("icon-price-range")
 
@@ -87,7 +88,7 @@ if (dropbtnIcon.className == "bi bi-chevron-up m-2") {
 }
 }
 
-// * brand
+// brand
 btnIcon_brand = () => {
 const dropbtnIcon = document.getElementById("icon-brand")
 
@@ -98,7 +99,7 @@ if (dropbtnIcon.className == "bi bi-chevron-up m-2") {
 }
 }
 
-// * rating
+// rating
 btnIcon_rating = () => {
   const dropbtnIcon = document.getElementById("icon-rating")
   
@@ -108,3 +109,27 @@ btnIcon_rating = () => {
     dropbtnIcon.className = "bi bi-chevron-up m-2";
   }
   }
+
+// * countdown-timer
+const countdown = () => {
+  var countDate = new Date("Jun 23, 2022 23:59:59").getTime();
+  const now = new Date().getTime();
+  const gap = countDate - now;
+
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  const textDay = Math.floor(gap/day);
+  const textHour = Math.floor((gap%day)/hour);
+  const textMinute = Math.floor((gap%hour)/minute);
+  const textSecond = Math.floor((gap%minute)/second);
+
+  document.getElementById("days").innerText = textDay,
+  document.getElementById("hours").innerText = textHour,
+  document.getElementById("minutes").innerText = textMinute,
+  document.getElementById("seconds").innerText = textSecond;
+} 
+
+setInterval(countdown,1000);
