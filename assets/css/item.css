@@ -421,7 +421,7 @@ transform: translateX(0);
 .text-ellipsis {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   padding-left: 15px;
   padding-right: 15px; 
@@ -785,5 +785,21 @@ a:hover{
 }
 
 .prd-title{
+  font-family: var(--font-tungsten);
+}
+
+/* 
+* ads pages */
+
+.promo-banner-display{
+  margin-top: 8.53rem !important;
+}
+
+.promo-banner-display{
+  position: relative;
+  width: 100%;
+}
+
+.ads-title{
   font-family: var(--font-tungsten);
 }
