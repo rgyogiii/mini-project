@@ -114,14 +114,17 @@ body {
   border-bottom: 1px solid #ffffff;
 }
 
-.search-btn:focus {
+.search-btn:focus{
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
 
-.search-btn {
+.search-btn{
   background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .nav-link:hover {
@@ -1005,9 +1008,8 @@ a:hover {
 
 
  /* 
- * banner ads */
+ * banner ads page */
 
  .img-banner {
   width: 100%;
 }
-
