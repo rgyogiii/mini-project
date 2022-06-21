@@ -59,7 +59,7 @@
     >
       <!-- Navbar -->
       <div class="container py-3">
-        <a class="navbar-brand" href="/index.html"
+        <a class="navbar-brand" href="/assets/pages/guest/index.html"
           ><img src="/assets/img/logo-white.svg" height="30"
         /></a>
 
@@ -84,8 +84,10 @@
                 class="form-control border border-0 searchbox"
                 type="search"
                 placeholder="Search here..."
+                id="myInput"
               />
-              <a href="/assets/pages/guest/nav-category/sale.html">
+
+              <a href="/assets/pages/guest/nav-category/nav-sale.html">
                 <button class="btn px-2 search-btn" type="button">
                   <i class="bi bi-search"></i></button
               ></a>
@@ -95,7 +97,12 @@
           <!-- nav list -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/assets/pages/guest/index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -212,37 +219,49 @@
 
       <!-- Nav Category -->
       <div class="mt-3 py-2 shop-list">
-        <a href="/" class="mx-4">
+        <a href="/assets/pages/guest/product/nc-components.html" class="mx-4">
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >PC Components</label
           ></a
         >
-        <a href="#" class="mx-4">
+        <a
+          href="/assets/pages/guest/nav-category/nav-desktop-pc.html"
+          class="mx-4"
+        >
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >Desktop PC</label
           ></a
         >
-        <a href="#" class="mx-4">
+        <a
+          href="/assets/pages/guest/nav-category/nav-laptops.html"
+          class="mx-4"
+        >
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >Laptops</label
           ></a
         >
-        <a href="#" class="mx-4">
+        <a
+          href="/assets/pages/guest/nav-category/nav-for-gamers.html"
+          class="mx-4"
+        >
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >For Gamers</label
           ></a
         >
-        <a href="#" class="mx-4">
+        <a
+          href="/assets/pages/guest/nav-category/nav-peripherals.html"
+          class="mx-4"
+        >
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >Peripherals</label
           ></a
         >
-        <a href="#" class="mx-4">
+        <a href="/assets/pages/guest/nav-category/nav-sale.html" class="mx-4">
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >Sale</label
           ></a
         >
-        <a href="#" class="mx-4">
+        <a href="/assets/pages/guest/nav-category/nav-brands.html" class="mx-4">
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >Brands</label
           ></a
@@ -326,7 +345,9 @@
         aria-label="breadcrumb"
       >
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">
+            <a href="/assets/pages/guest/index.html">Home</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">Laptops</li>
         </ol>
       </nav>
@@ -370,9 +391,7 @@
                 />
               </a>
               <div class="portfolio-caption">
-                <div class="portfolio-caption-heading text-uppercase">
-                  HP
-                </div>
+                <div class="portfolio-caption-heading text-uppercase">HP</div>
               </div>
             </div>
           </div>
@@ -408,9 +427,7 @@
                 />
               </a>
               <div class="portfolio-caption">
-                <div class="portfolio-caption-heading text-uppercase">
-                  Dell
-                </div>
+                <div class="portfolio-caption-heading text-uppercase">Dell</div>
               </div>
             </div>
           </div>
@@ -427,9 +444,7 @@
                 />
               </a>
               <div class="portfolio-caption">
-                <div class="portfolio-caption-heading text-uppercase">
-                  Acer
-                </div>
+                <div class="portfolio-caption-heading text-uppercase">Acer</div>
               </div>
             </div>
           </div>
@@ -446,9 +461,7 @@
                 />
               </a>
               <div class="portfolio-caption">
-                <div class="portfolio-caption-heading text-uppercase">
-                  Asus
-                </div>
+                <div class="portfolio-caption-heading text-uppercase">Asus</div>
               </div>
             </div>
           </div>
@@ -465,9 +478,7 @@
                 />
               </a>
               <div class="portfolio-caption">
-                <div class="portfolio-caption-heading text-uppercase">
-                  MSI
-                </div>
+                <div class="portfolio-caption-heading text-uppercase">MSI</div>
               </div>
             </div>
           </div>
@@ -601,7 +612,7 @@
                 <span class="my-1 ms-2 text-uppercase">Brand</span>
                 <i class="bi bi-chevron-up m-2" id="icon-brand"></i>
               </button>
-              <div class="dropdown-content-side">                
+              <div class="dropdown-content-side">
                 <label class="chckbx ps-3 mt-2">
                   <input
                     type="checkbox"
@@ -722,7 +733,8 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        HP Pavilion Ryzen 5 5600H 8GB 256GB SSD NVIDIA GeForce GTX 1650 Win11 Laptop PS
+                        HP Pavilion Ryzen 5 5600H 8GB 256GB SSD NVIDIA GeForce
+                        GTX 1650 Win11 Laptop PS
                       </p>
                     </div>
 
@@ -770,7 +782,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        MSI GF63 Thin Gaming Laptop i5-10500H/ i7-10750H/ i7-/10750H/RTX3050 GTX1650/8gb/512 SSD/15.6" FHD IPS/Backlit KB/Win10 Home/Bag 0PHEN
+                        MSI GF63 Thin Gaming Laptop i5-10500H/ i7-10750H/
+                        i7-/10750H/RTX3050 GTX1650/8gb/512 SSD/15.6" FHD
+                        IPS/Backlit KB/Win10 Home/Bag 0PHEN
                       </p>
                     </div>
 
@@ -818,7 +832,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        Asus ROG Zephyrus G14 Gaming Laptop R-7 5800HS/RTX3050Ti 4gb/14in WQHD/16gb/1TB SSD/Backlit KB/Win10/Anime Matrix/Eclipse Gray
+                        Asus ROG Zephyrus G14 Gaming Laptop R-7 5800HS/RTX3050Ti
+                        4gb/14in WQHD/16gb/1TB SSD/Backlit KB/Win10/Anime
+                        Matrix/Eclipse Gray
                       </p>
                     </div>
 
@@ -866,7 +882,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        Asus ROG Strix Scar 15 Gaming Laptop R9-5900HX/RTX 3060 6gb/16gb/1Tb SSD/15.6" FHD 300Hz/Win10 Home G533QM-HF028TS 1ION ASG52367
+                        Asus ROG Strix Scar 15 Gaming Laptop R9-5900HX/RTX 3060
+                        6gb/16gb/1Tb SSD/15.6" FHD 300Hz/Win10 Home
+                        G533QM-HF028TS 1ION ASG52367
                       </p>
                     </div>
 
@@ -914,7 +932,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        HP Pavilion 15-eh1121AU R5-5500U 15.6"FHD IPS 8gb*2 AMD Radeon Graphics 1Tb SSD Win11 Home Fog Blue Laptop 1ION HP582633
+                        HP Pavilion 15-eh1121AU R5-5500U 15.6"FHD IPS 8gb*2 AMD
+                        Radeon Graphics 1Tb SSD Win11 Home Fog Blue Laptop 1ION
+                        HP582633
                       </p>
                     </div>
 
@@ -962,7 +982,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        LENOVO IDEAPAD 5 Pro 14ACN6 AMD R5-5600U or R7-5800U 16gb soldered 14" 2.2K 60Hz IPS 512 SSD MX450 2gb Win10 Laptop 1ION
+                        LENOVO IDEAPAD 5 Pro 14ACN6 AMD R5-5600U or R7-5800U
+                        16gb soldered 14" 2.2K 60Hz IPS 512 SSD MX450 2gb Win10
+                        Laptop 1ION
                       </p>
                     </div>
 
@@ -1010,7 +1032,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        LENOVO YOGA Slim 7 Carbon 14ACN6 AMD R7-5800U 16GB 14" 2.8K OLED 512 SSD AMD Radeon Win11 Laptop Cloud Grey (82L00026PH) 1ION
+                        LENOVO YOGA Slim 7 Carbon 14ACN6 AMD R7-5800U 16GB 14"
+                        2.8K OLED 512 SSD AMD Radeon Win11 Laptop Cloud Grey
+                        (82L00026PH) 1ION
                       </p>
                     </div>
 
@@ -1058,7 +1082,9 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        LENOVO YOGA 7 14ACN6 AMD Ryzen 5-5600U 16GB 14-inch FHD IPS Touch/Pen 512 SSD AMD Radeon Win11 Laptop Slate Grey 1ION
+                        LENOVO YOGA 7 14ACN6 AMD Ryzen 5-5600U 16GB 14-inch FHD
+                        IPS Touch/Pen 512 SSD AMD Radeon Win11 Laptop Slate Grey
+                        1ION
                       </p>
                     </div>
 
@@ -1106,7 +1132,8 @@
                   <div class="card-body">
                     <div class="row px-1 text-center">
                       <p class="fs-4 ellipsis-text">
-                        HP 14-fq1097nr Ryzen 3 5300U 14 8GB 256GB PCIe NVMe M.2 SSD, AMD Radeon Graphics Win10 Laptop PS
+                        HP 14-fq1097nr Ryzen 3 5300U 14 8GB 256GB PCIe NVMe M.2
+                        SSD, AMD Radeon Graphics Win10 Laptop PS
                       </p>
                     </div>
 
