@@ -110,6 +110,7 @@ btnIcon_rating = () => {
   }
   }
 
+  
 // * countdown-timer
 const countdown = () => {
   var countDate = new Date("Jun 23, 2022 23:59:59").getTime();
@@ -133,7 +134,6 @@ const countdown = () => {
 } 
 
 setInterval(countdown,1000);
-
 
 // * Creatives Animations
 

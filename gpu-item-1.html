@@ -36,16 +36,20 @@
       rel="stylesheet"
     />
     <!-- barlow font -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- tungsten font -->
-    <link href="//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold" rel="stylesheet" type="text/css"/>
+    <link
+      href="//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- css -->
-    <link href="./assets/css/index.css" rel="stylesheet" />
-
-    <!-- css:search -->
-    <link href="./assets/css/search.css" rel="stylesheet" />
+    <link href="./assets/css/item.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
@@ -80,23 +84,7 @@
                 class="form-control border border-0 searchbox"
                 type="search"
                 placeholder="Search here..."
-                id="myInput"
-                onkeyup="myFunction()"                
-                onblur="searchOff()"
               />
-
-              <!-- This is sample for search suggestion -->
-              <ul id="myUL">
-                <li><a href="#">AMD</a></li>
-                <li><a href="#">Keyboard</a></li>
-                <li><a href="#">Chassis Fan</a></li>
-                <li><a href="#">Components</a></li>
-                <li><a href="#">RAKK</a></li>
-                <li><a href="#">Headset</a></li>
-                <li><a href="#">Processor/a></li>
-              </ul>
-              
-
               <a href="/assets/pages/guest/nav-category/sale.html">
                 <button class="btn px-2 search-btn" type="button">
                   <i class="bi bi-search"></i></button
@@ -122,22 +110,54 @@
                 class="dropdown-menu dropdown-menu-end border-0"
                 aria-labelledby="dropdown01"
               >
-                <li><a class="dropdown-item" href="/assets/pages/guest/product/nc-components.html">Components</a></li>
-                <li><a class="dropdown-item" href="/assets/pages/guest/product/nc-peripherals.html">Peripherals</a></li>
                 <li>
-                  <a class="dropdown-item" href="/assets/pages/guest/product/nc-accesories.html">Accessories</a>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-components.html"
+                    >Components</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/assets/pages/guest/product/nc-pc-furnitures.html">PC Furnitures</a>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-peripherals.html"
+                    >Peripherals</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/assets/pages/guest/product/nc-os-softwares.html">OS & Softwares</a>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-accesories.html"
+                    >Accessories</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/assets/pages/guest/product/nc-laptops-and-mobiles.html">Laptops & Mobile Devices</a>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-pc-furnitures.html"
+                    >PC Furnitures</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/assets/pages/guest/product/nc-pre-build.html">Pre-Build</a>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-os-softwares.html"
+                    >OS & Softwares</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-laptops-and-mobiles.html"
+                    >Laptops & Mobile Devices</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/guest/product/nc-pre-build.html"
+                    >Pre-Build</a
+                  >
                 </li>
               </ul>
             </li>
@@ -217,7 +237,7 @@
             >Peripherals</label
           ></a
         >
-        <a href="/assets/pages/guest/nav-category/sale.html" class="mx-4">
+        <a href="#" class="mx-4">
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >Sale</label
           ></a
@@ -230,149 +250,10 @@
       </div>
     </nav>
 
-    <!-- header -->
-    <header class="mainHead pb-5">
-      <div class="container headerTitle text-start">
-        <h1 class="mb-2 text-dark mytitle">PC Kayo Dyan!</h1>
-        <h3 class="text-secondary">A Pre-made Gamer and Professional PC builds
-        </h3>
-        <h3 class="text-secondary">for a worry-free and quality service experience.
-        </h3>
-        <button class="shp-btn mt-5">
-          <div>
-            <span></span>
-            <a href ="#">Shop Now</a>
-          </div>
-        </button>
-      </div>
-    </header>
-
-    <!-- product category -->
-    <div class="container-fluid product-cntainr">
-      <div class="container pb-2">
-        <div class="me-auto">
-          <h3 class="text-uppercase m-0 py-5 section-title-category">Shop by Category</h3>
-        </div>
-        <div class="row pb-5">
-            <!-- category 1 -->
-            <div class="col-lg-3 col-sm-6 mb-4 category-contianer">
-                <div class="portfolio-item">
-                    <a class="portfolio-link"   href="/assets/pages/guest/category/1-processor.html">
-                      <span class="portfolio-hover">
-                      </span>
-                        <img class="img-fluid" src="./assets/img/category/1.png" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading text-uppercase">Processor</div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <!-- category 2 -->
-            <div class="col-lg-3 col-sm-6 mb-4 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/2-gpu.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/2.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">Graphics Cards</div>
-                  </div>
-              </div>
-            </div>
-
-            <!-- category 3 -->
-            <div class="col-lg-3 col-sm-6 mb-4 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/3-motherboard.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/3.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">Motherboard</div>
-                  </div>
-              </div>
-            </div>
-
-            <!-- category 4 -->
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/4-monitor.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/4.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">Monitor</div>
-                  </div>
-              </div>
-            </div>
-
-            <!-- category 5 -->
-            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/5-memory.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/5.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">Memory</div>
-                  </div>
-              </div>
-            </div>
-            
-            <!-- category 6 -->
-            <div class="col-lg-3 col-sm-6 mb-4 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/6-mouse.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/6.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">Mouse</div>
-                  </div>
-              </div>
-            </div>
-
-            <!-- category 7 -->
-            <div class="col-lg-3 col-sm-6 mb-4 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/7-keyboard.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/7.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">Keyboard</div>
-                  </div>
-              </div>
-            </div>
-
-            <!-- category 8 -->
-            <div class="col-lg-3 col-sm-6 category-contianer">
-              <div class="portfolio-item">
-                  <a class="portfolio-link"   href="/assets/pages/guest/category/8-ssd.html">
-                    <div class="portfolio-hover">
-                    </div>
-                      <img class="img-fluid" src="./assets/img/category/8.png" alt="..." />
-                  </a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading text-uppercase">SSD</div>
-                  </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- product banner -->
-    <div class="container pb-4">
-      <div class="pt-5">
+    <!-- product header -->
+    <div class="container product-item-display">
+      <!-- product banner -->
+      <div class="pt-3">
         <a href="#">
           <img
             src="./assets/img/product/prd-banner_2.jpg"
@@ -380,65 +261,121 @@
         /></a>
       </div>
 
-      <div class="pt-3">
-        <a href="#">
-          <img
-            src="./assets/img/product/prd-banner_1.jpg"
-            class="d-block img-banner"
-        /></a>
-      </div>
+      <!-- breadcrumbs -->
+      <nav
+        class="my-3 pt-5"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Zotac Geforce Gtx 1050ti DirectX 12 ZT-P10510A-10L 4GB 128-Bit GDDR5
+            PCI Express 3.0 HDCP Ready Mini Gaming Videocard
+          </li>
+        </ol>
+      </nav>
     </div>
 
-    <!-- brands -->
-    <div class="container-fluid">
-      <div class="container pb-2">
-        <div class="row align-items-center">
-          <div class="col-md-3 col-sm-6 my-4">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="./assets/img/brands/amd.png"
-                alt="..."
-            /></a>
+    <!-- product Item -->
+    <div class="container px-1 px-lg-2 mb-5 pt-2">
+      <div class="row gx-4 gx-lg-5 px-5">
+        <div class="card col-md-6 px-5 align-items-center">
+          <div class="badge bg-dark text-white position-absolute sale-badge">
+            Sale -20%
           </div>
-          <div class="col-md-3 col-sm-6 my-4">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="./assets/img/brands/asus.svg"
-                alt="..."
-            /></a>
+          <img
+            class="card-img-top mb-5 mb-md-0 itm-img"
+            src="/assets/img/product/gpu/gpu1.webp"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="small mb-1 text-uppercase">Zotac</div>
+          <h1 class="display-4 fw-bolder prd-title">
+            Zotac Geforce Gtx 1050ti DirectX 12 ZT-P10510A-10L 4GB 128-Bit GDDR5
+            PCI Express 3.0 HDCP Ready Mini Gaming Videocard
+          </h1>
+          <div class="fs-5 mb-4">
+            <span class="text-decoration-line-through text-muted me-2"
+              >₱ 10,695</span
+            >
+            <span>₱ 8,556</span>
           </div>
-          <div class="col-md-3 col-sm-6 my-4">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="./assets/img/brands/nvidia.png"
-                alt="..."
-            /></a>
+
+          <div class="d-flex mt-2">
+            <input
+              class="form-control text-center me-3"
+              id="inputQuantity"
+              type="num"
+              value="1"
+              style="max-width: 3rem"
+            />
+            <button
+              class="btn btn-outline-dark flex-shrink-0 mx-1 add2cart-btn"
+              type="button"
+            >
+              <i class="bi bi-cart-plus-fill me-1"></i>
+              Add to Cart
+            </button>
+
+            <button
+              class="btn btn-outline-dark flex-shrink-0 mx-2 buy-btn"
+              type="button"
+            >
+              Buy Now
+            </button>
           </div>
-          <div class="col-md-3 col-sm-6 my-4">
-            <a href="#!"
-              ><img class="img-fluid img-brand d-block mx-auto"
-              src="./assets/img/brands/intel.png" alt="..." 
-            ></a>
-          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center px-5">
+        <div class="row">
+          <p class="lead fw-bold">Product Specification</p>
+          <ul>
+            <li>Brand: Zotac</li>
+            <li>Model: Mini P10510A10L</li>
+            <li>GPU: GeForce GTX 1050 Ti</li>
+            <li>CUDA cores: 768</li>
+            <li>Video Memory: 4GB GDDR5</li>
+            <li>Memory Bus: 128-bit</li>
+            <li>Engine Clock: Base: 1303 MHz, Boost:1417 MHz</li>
+            <li>Memory Clock: 7 GHz</li>
+            <li>PCI Express: 3.0</li>
+            <li>DisplayPort 1.4</li>
+            <li>HDMI 2.0b</li>
+            <li>DL-DVI</li>
+            <li>HDCP Support: Yes</li>
+            <li>Multi Display Capability: Triple Display</li>
+            <li>Recommended Power Supply: 300W</li>
+            <li>DirectX: 12 API feature level 12_1</li>
+            <li>OpenGL: 4.5</li>
+            <li>Cooling: Single Fan</li>
+            <li>Slot Size: Dual Slot</li>
+            <li>Supported OS: Windows 10 / 8 / 7</li>
+            <li>Card Length: 144.78mm x 111.15mm</li>
+            <li>Accessories: User Manual</li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- best seller -->
-    <div class="container-fluid py-5">
-      <div class="container pt-5">
+    <!-- divider -->
+    <div class="container my-5">
+      <hr class="line-divider-1st" />
+    </div>
+
+    <!-- related item -->
+    <div class="container-fluid pb-5 mb-5">
+      <div class="container py-3">
         <div class="row mx-auto my-auto justify-content-center">
-          <div class="d-inline-flex pb-1">
+          <div class="d-inline-flex py-2">
             <div class="me-auto">
-              <h3 class="text-uppercase m-0 section-title-bestseller">Best Seller</h3>
+              <h3 class="text-uppercase m-0 related-item">Related Products</h3>
             </div>
 
             <div class="align-self-center">
-              <h6 class="text-uppercase m-0 text-start">
-                <span class="shopall"><span class="spanshop">Shop All</span></span>
+              <h6 class="text-uppercase shopall m-0 text-start">
+                <span class="spanshop">Shop All</span>
               </h6>
             </div>
           </div>
@@ -507,7 +444,10 @@
                       />
                       <div class="card-body">
                         <div class="row px-1 text-center">
-                          <p class="fs-4 text-ellipsis">RAKK Talan Air Wireless Black and White PAW3370 Sensor USB Gaming Mouse and Top Cover</p>
+                          <p class="fs-4 text-ellipsis">
+                            RAKK Talan Air Wireless Black and White PAW3370
+                            Sensor USB Gaming Mouse and Top Cover
+                          </p>
                         </div>
 
                         <div class="row">
@@ -547,7 +487,11 @@
                 <div class="carousel-item">
                   <a href="#"
                     ><div class="card p-2 col-3 card-container border-0">
-                      <div class="badge bg-dark text-white position-absolute sale-badge">Sale -8%</div>
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -8%
+                      </div>
                       <img
                         src="./assets/img/product/2.jpg"
                         class="card-img-top card-highlightcover"
@@ -555,7 +499,11 @@
 
                       <div class="card-body">
                         <div class="row px-1 text-center">
-                          <p class="fs-4 text-ellipsis">Team Group GX1 120gb SATA 2.5 Slim form factor, Supports TRIM, 4x faster than HDD,Reliable Internal Solid State Drive</p>
+                          <p class="fs-4 text-ellipsis">
+                            Team Group GX1 120gb SATA 2.5 Slim form factor,
+                            Supports TRIM, 4x faster than HDD,Reliable Internal
+                            Solid State Drive
+                          </p>
                         </div>
 
                         <div class="row">
@@ -568,7 +516,12 @@
 
                         <div class="row prd_price px-1">
                           <div class="d-flex justify-content-center">
-                            <p class="fw-bold"><span class="text-muted text-decoration-line-through me-3">₱ 1,015</span>₱ 935</p>
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 1,015</span
+                              >₱ 935
+                            </p>
                           </div>
                         </div>
 
@@ -595,7 +548,11 @@
                 <div class="carousel-item">
                   <a href="#"
                     ><div class="card p-2 col-3 card-container border-0">
-                      <div class="badge bg-dark text-white position-absolute sale-badge">Sale -17%</div>
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -17%
+                      </div>
                       <img
                         src="./assets/img/product/3.jpg"
                         class="card-img-top card-highlightcover"
@@ -603,7 +560,11 @@
 
                       <div class="card-body">
                         <div class="row px-1 text-center">
-                          <p class="fs-4 text-ellipsis">RAKK Talan Black/White Accuracy and precision Wireless Limitless Customization Gaming Mouse and Top Cover</p>
+                          <p class="fs-4 text-ellipsis">
+                            RAKK Talan Black/White Accuracy and precision
+                            Wireless Limitless Customization Gaming Mouse and
+                            Top Cover
+                          </p>
                         </div>
 
                         <div class="row">
@@ -616,7 +577,12 @@
 
                         <div class="row prd_price px-1">
                           <div class="d-inline-flex justify-content-center">
-                            <p class="fw-bold"><span class="text-muted text-decoration-line-through me-3">₱ 1,919</span>₱ 1,595</p>
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 1,919</span
+                              >₱ 1,595
+                            </p>
                           </div>
                         </div>
 
@@ -643,7 +609,11 @@
                 <div class="carousel-item">
                   <a href="#"
                     ><div class="card p-2 col-3 card-container border-0">
-                      <div class="badge bg-dark text-white position-absolute sale-badge">Sale -7%</div>
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -7%
+                      </div>
                       <img
                         src="./assets/img/product/4.jpg"
                         class="card-img-top card-highlightcover"
@@ -651,7 +621,10 @@
 
                       <div class="card-body">
                         <div class="row px-1 text-center">
-                          <p class="fs-4 text-ellipsis">Nvision N190HD 19" / N185HD 18.5" / N200HD 20"/ V190H 19" Monitor 60hz, | HDMI | VGA | LED Display</p>
+                          <p class="fs-4 text-ellipsis">
+                            Nvision N190HD 19" / N185HD 18.5" / N200HD 20"/
+                            V190H 19" Monitor 60hz, | HDMI | VGA | LED Display
+                          </p>
                         </div>
 
                         <div class="row">
@@ -664,7 +637,12 @@
 
                         <div class="row prd_price px-1">
                           <div class="d-inline-flex justify-content-center">
-                            <p class="fw-bold"><span class="text-muted text-decoration-line-through me-3">₱ 2,800</span>₱ 2,595</p>
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 2,800</span
+                              >₱ 2,595
+                            </p>
                           </div>
                         </div>
 
@@ -691,7 +669,11 @@
                 <div class="carousel-item">
                   <a href="#"
                     ><div class="card p-2 col-3 card-container border-0">
-                      <div class="badge bg-dark text-white position-absolute sale-badge">Sale -10%</div>
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -10%
+                      </div>
                       <img
                         src="./assets/img/product/5.jpg"
                         class="card-img-top card-highlightcover"
@@ -699,7 +681,11 @@
 
                       <div class="card-body">
                         <div class="row px-1 text-center">
-                          <p class="fs-4 text-ellipsis">Netac N535S 120GB/240GB/480GB 2.5 Inch, 560mb read / 520mb write SATA III Reliable& durable designed for personal Desktop and Laptop Solid State Drive</p>
+                          <p class="fs-4 text-ellipsis">
+                            Netac N535S 120GB/240GB/480GB 2.5 Inch, 560mb read /
+                            520mb write SATA III Reliable& durable designed for
+                            personal Desktop and Laptop Solid State Drive
+                          </p>
                         </div>
 
                         <div class="row">
@@ -712,7 +698,12 @@
 
                         <div class="row prd_price px-1">
                           <div class="d-inline-flex justify-content-center">
-                            <p class="fw-bold"><span class="text-muted text-decoration-line-through me-3">₱ 1,025</span>₱ 925</p>
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 1,025</span
+                              >₱ 925
+                            </p>
                           </div>
                         </div>
 
@@ -739,7 +730,11 @@
                 <div class="carousel-item">
                   <a href="#"
                     ><div class="card p-2 col-3 card-container border-0">
-                      <div class="badge bg-dark text-white position-absolute sale-badge">Sale -29%</div>
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -29%
+                      </div>
                       <img
                         src="./assets/img/product/6.jpg"
                         class="card-img-top card-highlightcover"
@@ -747,7 +742,9 @@
 
                       <div class="card-body">
                         <div class="row px-1 text-center">
-                          <p class="fs-4 text-ellipsis">Team Elite Plus 8gb 1x8 3200Mhz Ddr4 Memory</p>
+                          <p class="fs-4 text-ellipsis">
+                            Team Elite Plus 8gb 1x8 3200Mhz Ddr4 Memory
+                          </p>
                         </div>
 
                         <div class="row">
@@ -760,7 +757,12 @@
 
                         <div class="row prd_price px-1">
                           <div class="d-inline-flex justify-content-center">
-                            <p class="fw-bold"><span class="text-muted text-decoration-line-through me-3">₱ 2,263</span>₱ 1,600</p>
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 2,263</span
+                              >₱ 1,600
+                            </p>
                           </div>
                         </div>
 
@@ -813,23 +815,9 @@
       </div>
     </div>
 
-    <!-- divider -->
-    <div class="container py-5 mt-5">
-      <hr class="line-divider-1st" />
-    </div>
-
-
     <!-- product banner -->
     <div class="container pb-5">
       <div class="pt-5">
-        <a href="#">
-          <img
-            src="./assets/img/product/prd-banner_2.jpg"
-            class="d-block img-banner"
-        /></a>
-      </div>
-
-      <div class="pt-3">
         <a href="#">
           <img
             src="./assets/img/product/prd-banner_1.jpg"
@@ -902,7 +890,7 @@
               <!-- social media -->
               <div class="col text-left pb-3">
                 <a href="#bestSeller"
-                  ><img src="/assets/img/logo-white.svg" height="50"
+                  ><img src="./assets/img/logo-white.svg" height="50"
                 /></a>
 
                 <div class="pb-3">
