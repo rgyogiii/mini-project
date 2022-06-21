@@ -943,7 +943,7 @@ a:hover {
   animation-duration: 2s; /* set the duration! */
 }
 
-.creatives-img{
+.creativesImg{
   position: absolute;
   display: none;
   height: 50%;
@@ -953,7 +953,7 @@ a:hover {
   animation-delay: 5s;
 }
 
-.creatives-img-1{
+.creativesImgA{
   position: absolute;
   display: block;
   height: 50%;
@@ -1002,9 +1002,16 @@ a:hover {
   outline: none;
  }
 
- #menucontainer{
-  display: none;
+ .slctrBtn{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 15% !important;
+  left: 0% !important;
+  z-index: 1;
  }
+
+
 
 
  /* 

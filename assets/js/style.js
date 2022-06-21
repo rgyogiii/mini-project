@@ -147,6 +147,17 @@ element.addEventListener('animationend', () => {
   element.classList.add('animate__animated', 'animate__flash', 'animate__delay-2s', 'animate__repeat-3', 'animate__slower');
 });
 
+// product selector
+updatePrdimg = () => {
+
+  var image = document.getElementById('prdImgContainer');
+      if (image.src.match("/assets/img/creatives/pc1.png")) {
+          image.src = "/assets/img/creatives/pc.png";
+      }
+      else {
+          image.src = "/assets/img/creatives/pc1.png";
+      }
+}
 
 //  toggler icon change for selector creatives page
 
