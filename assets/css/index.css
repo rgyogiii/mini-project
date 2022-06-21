@@ -316,10 +316,6 @@ body{
 * container-carousel
 */
 
-.carousel-cntainr{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%,  rgba(236, 232, 225, 1) 100%);
-}
-
 /* card container */
 .card-container{
   width: 18rem;
@@ -380,7 +376,7 @@ body{
 /* medium and up screens */
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
+  .carouselategory-inner .carousel-item-next {
     transform: translateX(25%);
   }
   
@@ -413,11 +409,11 @@ transform: translateX(0);
 }
 
 .section-title-bestseller{
-  color: #ffffff;
+  color: #000000;
 }
 
 .section-title-category{
-  color: #000000;
+  color: #ffffff;
 }
 
 /* 
@@ -506,26 +502,28 @@ a:hover{
 
 /* shop-all designs when hover*/
 .shopall:hover{
-  border-bottom: 0.1em solid #ffffff;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.spanshop:hover{
-  border-bottom: 0.1em solid transparent;
+  border-bottom: 0.1em solid #000000;
+  padding: 0px 10px;
 }
 
 .shopall{
   cursor: pointer;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px;
   margin-bottom: 5px;
   border-bottom: 0.1em solid transparent;
 }
 
+.spanshop:hover{
+  border-bottom: 0.1em solid transparent;
+  padding: 0px 10px;
+  color: #000000;
+}
+
 .spanshop{
-  border-bottom: 0.1em solid #ffffff;
-  color: #ffffff;
+  border-bottom: 0.1em solid #000000;
+  color: #000000;
+  padding: 0px 10px;
+  cursor: pointer;
 }
 
 /* 
@@ -648,13 +646,21 @@ a:hover{
 /* 
 * product categories */
 
+.product-cntainr{
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%,  rgba(236, 232, 225, 1) 100%); */
+  background-color: #010101;
+}
+
 .portfolio-caption {
   padding: 0.75rem;
   text-align: center;
-  background-color: #ECE8E1;
+  color: #010101;
+  background-color: #BDBCB7;
   border-left: 1px solid #BDBCB7;
   border-right: 1px solid #BDBCB7;
   border-bottom: 1px solid #BDBCB7;  
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .portfolio-caption-heading {
@@ -672,7 +678,10 @@ a:hover{
   height: auto;
   border-left: 1px solid #BDBCB7;
   border-right: 1px solid #BDBCB7;
-  border-top: 1px solid #BDBCB7; 
+  border-top: 1px solid #BDBCB7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #BDBCB7;
 }
 
 .category-contianer .portfolio-link .portfolio-hover {

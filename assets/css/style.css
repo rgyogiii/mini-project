@@ -663,7 +663,6 @@ a:hover {
   text-align: left;
   cursor: pointer;
   outline: none;
-
  }
 
  .dropdown-content-side {
@@ -915,5 +914,115 @@ a:hover {
   padding-right: 20px;
   padding: 5px;
   margin-top: 15px;
+  font-family: var(--font-tungsten);
+}
+
+/* 
+* Creative Page */
+
+
+.creative-container {
+  position: relative;
+  margin-top: 8.53rem;
+}
+
+.creative-bg{
+  width: 100%;
+  animation-duration: 5s;
+  animation-delay: 3s; /* set the duration! */
+}
+
+.creative-bg-podium{
+  position: absolute;
+  width: 100%;
+
+  animation: bounceInDown; /* referring directly to the animate__animated animate__bounceInDown className */
+  animation-duration: 2s; /* set the duration! */
+}
+
+.creatives-img{
+  position: absolute;
+  display: none;
+  height: 50%;
+  top: 11% !important;
+  left: 38% !important;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.creatives-img-1{
+  position: absolute;
+  display: block;
+  height: 50%;
+  top: 11% !important;
+  left: 38% !important;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.creatives-bg-effect{
+  position: absolute;
+  height: 100%;
+  top: -22% !important;
+  left: 28% !important;
+  z-index: 1;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+/* product selector */
+
+.img-slctor{
+  height: 30px;
+}
+
+.slctor-filled-container{
+  position: absolute;
+  width: 306px;
+  background-color: #ece8e1;
+  display: none;
+  padding: 10px 0px;
+  border: 1px solid #BDBCB7;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.dropbtn-slctor{
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+ }
+
+ #menucontainer{
+  display: none;
+ }
+
+
+ /* 
+ * banner ads */
+
+ .img-banner {
+  width: 100%;
+}
+
+/* 
+* ads pages */
+
+.promo-banner-display{
+  margin-top: 8.53rem !important;
+}
+
+.promo-banner-display{
+  position: relative;
+  width: 100%;
+}
+
+.ads-title{
   font-family: var(--font-tungsten);
 }
