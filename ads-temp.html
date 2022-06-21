@@ -1,0 +1,961 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>MAYARI</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_icon.svg" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- merriweather sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- barlow font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tungsten font -->
+    <link
+      href="//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- css -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg p-1 fixed-top d-flex flex-column"
+      id="mainNav"
+    >
+      <!-- Navbar -->
+      <div class="container py-3">
+        <a class="navbar-brand" href="#productBanner"
+          ><img src="./assets/img/logo-white.svg" height="30"
+        /></a>
+
+        <button
+          class="navbar-toggler p-2 border-0 burger"
+          type="button"
+          id="navbarSideCollapse"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="bi bi-list m-2 fw-bold"></i></span>
+        </button>
+
+        <!-- Navigation -->
+        <div
+          class="navbar-collapse offcanvas-collapse"
+          id="navbarsExampleDefault"
+        >
+          <!-- search box -->
+          <div class="w-75 d-flex justify-content-end searchbox-div me-3">
+            <form class="d-flex m-0 searchbox-container" role="search">
+              <input
+                class="form-control border border-0 searchbox"
+                type="search"
+                placeholder="Search here..."
+              />
+              <a href="penshoppe.html">
+                <button class="btn px-2 search-btn" type="button">
+                  <i class="bi bi-search"></i></button
+              ></a>
+            </form>
+          </div>
+
+          <!-- nav list -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Product</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end border-0"
+                aria-labelledby="dropdown01"
+              >
+                <li><a class="dropdown-item" href="#">Components</a></li>
+                <li><a class="dropdown-item" href="#">Peripherals</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Accessories</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">PC Furnitures</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">OS & Softwares</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Laptops & Mobile Devices</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Pre-Build</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown user me-0">
+              <a
+                class="nav-link"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="bi bi-person-circle"></i
+              ></a>
+              <ul
+                class="dropdown-menu dropdown-menu-end border-0 dropdown-menu-user"
+                aria-labelledby="dropdown01"
+              >
+                <li>
+                  <a
+                    class="dropdown-item fw-light light_text text-uppercase"
+                    href="#"
+                    >Log In</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item fw-light light_text text-uppercase"
+                    href="#"
+                    >Register</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item fw-light light_text text-uppercase"
+                    href="#"
+                    >Help</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-0">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="bi bi-cart3 cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nav Category -->
+      <div class="mt-3 py-2 shop-list">
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >PC Components</label
+          ></a
+        >
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Desktop PC</label
+          ></a
+        >
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Laptops</label
+          ></a
+        >
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >For Gamers</label
+          ></a
+        >
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Peripherals</label
+          ></a
+        >
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Sale</label
+          ></a
+        >
+        <a href="#" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Brands</label
+          ></a
+        >
+      </div>
+    </nav>
+
+    <!-- ad banner -->
+    <div class="promo-banner-display">
+      <img src="./assets/img/banner/c.jpg" />
+    </div>
+
+    <!-- Section 1 -->
+    <div class="container ads-container my-5">
+      <!-- breadcrumbs -->
+      <nav
+        class="my-4"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+
+      <!-- page title -->
+      <div class="me-auto mb-2">
+        <h3 class="text-uppercase m-0 ads-title text-center display-2">
+          AMD RYZEN
+        </h3>
+      </div>
+
+      <!-- product -->
+      <div
+        class="row gx-3 gx-lg-4 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center"
+      >
+        <!-- product 1 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <div class="badge text-white position-absolute oos-badge">
+              NEW ARRIVAL
+            </div>
+            <img
+              src="/assets/img/product/processor/proci1.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  Amd Ryzen 5 3600 Processor Socket Am4 4.2ghz with Wraith
+                  Stealth Cooler
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 11,095</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(22 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 2 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci2.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Ryzen 5 Pro 4650G Socket Am4 3.7ghz with Radeon Vega 7
+                  Processor with Wraith Stealth Cooler - No Box
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 12,419</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci3.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Athlon 3000G Vega 3 Socket Am4 Processor
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 4,895</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 4 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci4.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Ryzen 7 5800X Socket AM4 3.8GHz Processor
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 22,095</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 5 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci5.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Ryzen 5 5600G Socket Am4 3.9GHz with Radeon Vega 7
+                  Processor
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 13,995</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 6 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci5.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Ryzen 5 5600X Socket AM4 3.7GHz Processor
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 18,415</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 7 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci6.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Ryzen 3 4100 Socket Am4 3.8GHz with Wraith Stealth Cooler
+                  Processor MPK / 4 CPU Cores / 8 Threads / Up to 4.0GHz Max.
+                  Boost Clock
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 6,295</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 8 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="/assets/img/product/processor/proci7.webp"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  AMD Ryzen 7 Pro 4750G Socket Am4, 16 Thread, 8 CPU Cores,
+                  3.6ghz with Radeon Vega 8 PCIe 3.0 Processor - No Box
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">AMD</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 16,595</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- promo banner  -->
+    <div class="container pb-4">
+      <div class="pt-5">
+        <a href="#">
+          <img
+            src="./assets/img/product/prd-banner_2.jpg"
+            class="d-block img-banner"
+        /></a>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="container ads-container my-5">
+      <!-- product -->
+      <div
+        class="row gx-3 gx-lg-4 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center"
+      >
+        <!-- product 1 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="./assets/img/product/1.jpg"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  RAKK Talan Air Wireless Black and White PAW3370 Sensor USB
+                  Gaming Mouse
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">RAKK</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 2,395.00</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 2 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="./assets/img/product/1.jpg"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  RAKK Talan Air Wireless Black and White PAW3370 Sensor USB
+                  Gaming Mouse and Top Cover
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">RAKK</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 2,395.00</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="./assets/img/product/1.jpg"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  RAKK Talan Air Wireless Black and White PAW3370 Sensor USB
+                  Gaming Mouse and Top Cover
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">RAKK</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 2,395.00</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 4 -->
+        <div class="col-md-3 col-sm-6 my-3">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img
+              src="./assets/img/product/1.jpg"
+              class="card-img-top card-highlightcover"
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="row px-1 text-center">
+                <p class="fs-4 ellipsis-text">
+                  RAKK Talan Air Wireless Black and White PAW3370 Sensor USB
+                  Gaming Mouse and Top Cover
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="pe-2 d-flex justify-content-center text-center">
+                  <p class="solid_promo px-1 ms-1">RAKK</p>
+                </div>
+              </div>
+
+              <div class="row prd_price px-1">
+                <div class="d-flex justify-content-center">
+                  <p class="fw-bold">₱ 2,395.00</p>
+                </div>
+              </div>
+
+              <div class="row prd_rating-star pb-2">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="prd_rating mx-2">
+                    <p class="fw-bold text-muted">(122 Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner footer -->
+    <div class="contianer-fluid py-5 banner-footer">
+      <div class="footer-img-brand"></div>
+      <button class="shp-btn centered">
+        <div>
+          <span></span>
+          <a href="###">Get 10% OFF</a>
+        </div>
+      </button>
+    </div>
+
+    <!-- page footer -->
+    <div class="container-fluid pt-5 page-footer">
+      <div class="container">
+        <div class="container pt-1">
+          <div class="row pb-3 justify-content-evenly">
+            <div class="row mt-2">
+              <!-- about company -->
+              <div class="col text-left pb-5">
+                <label class="fw-bold fs-6 pb-4 footer-section-title"
+                  >ABOUT MAYARI</label
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">About Us</p></a>
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Careers</p></a>
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Reviews</p></a>
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Store Locations</p></a
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">FAQs</p></a>
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Contact Us</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Privacy Policy</p></a
+                >
+              </div>
+
+              <!-- customer service-->
+              <div class="col text-left pb-5">
+                <label class="fw-bold fs-6 pb-4 footer-section-title"
+                  >CUSTOMER SERVICE</label
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Help Centre</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Payment Methods</p></a
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Delivery</p></a>
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Terms and Conditions</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Return & Refund</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Mayari Guarantee</p></a
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Warranty</p></a>
+              </div>
+
+              <!-- social media -->
+              <div class="col text-left pb-3">
+                <a href="#bestSeller"
+                  ><img src="./assets/img/logo-white.svg" height="50"
+                /></a>
+
+                <div class="pb-3">
+                  <label class="fw-bold fs-6 pt-4 ps-2 footer-section-title"
+                    >FOLLOW US</label
+                  >
+                </div>
+
+                <div class="d-inline-flex w-100 flex-row justify-content-end">
+                  <div class="pe-5">
+                    <a class="ftr_txt" href="#">
+                      <p class="ftr_mtxt">
+                        <i class="bi bi-facebook footer-icon"></i>
+                        Facebook
+                      </p></a
+                    >
+                    <a class="ftr_txt" href="#"
+                      ><p class="ftr_mtxt">
+                        <i class="bi bi-instagram footer-icon"></i>
+                        Instagram
+                      </p></a
+                    >
+                  </div>
+
+                  <div class="ps-3">
+                    <a class="ftr_txt" href="#"
+                      ><p class="ftr_mtxt">
+                        <i class="bi bi-github footer-icon"></i>
+                        GitHub
+                      </p></a
+                    >
+                    <a class="ftr_txt" href="#"
+                      ><p class="ftr_mtxt">
+                        <i class="bi bi-linkedin footer-icon"></i>
+                        LinkedIn
+                      </p></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="line-divider my-0" />
+      </div>
+    </div>
+
+    <!-- credit footer -->
+    <div class="container-fluid credit-footer">
+      <div class="col text-center py-3">
+        <label class="fw-bold footer-section-credit">
+          © 2022 Mayari. All Rights Reserved.
+        </label>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./assets/js/style.js"></script>
+  </body>
+</html>
