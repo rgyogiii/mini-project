@@ -428,8 +428,8 @@ transform: translateX(0);
 }
 
 .sale-badge{
-  top: 0.5rem; 
-  right: 0.5rem;
+  top: 1rem; 
+  left: 1rem;
   background-color: #ee4d2d !important;
 }
 
