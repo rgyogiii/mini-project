@@ -787,3 +787,19 @@ a:hover{
 .prd-title{
   font-family: var(--font-tungsten);
 }
+
+/* 
+* ads pages */
+
+.promo-banner-display{
+  margin-top: 8.53rem !important;
+}
+
+.promo-banner-display{
+  position: relative;
+  width: 100%;
+}
+
+.ads-title{
+  font-family: var(--font-tungsten);
+}
