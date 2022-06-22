@@ -152,13 +152,10 @@ const prdImg = document.getElementById("prdImg");
 const prdImg1 = document.getElementById("prdImg1");
 const shpbtn = document.getElementById("ShpBtnCntnrId");
 
-
-
 updatePrdimg = () => {
 
   prdImg.classList.add("alive");
   prdImg1.classList.remove("alive");
-
 
   shpbtn.classList.add("alive");
   document.getElementById("btnLink").href="/assets/pages/guest/index.html";
@@ -168,7 +165,6 @@ updatePrdimgA = () => {
 
   prdImg.classList.remove("alive");
   prdImg1.classList.add("alive");
-
 
   shpbtn.classList.add("alive");
   document.getElementById("btnLink").href="/assets/pages/guest/index.html";
