@@ -234,38 +234,41 @@
         src="/assets/img/creatives/bg-podium.svg"
       />
       <img
-        class="creativesImg animate__animated animate__fadeIn"
-        src="/assets/img/creatives/pc.png"
-      />
-
-      <a href="item.html"><div>
-      
-      <img
-        class="creativesImgA animate__animated animate__fadeIn"
-        id="prdImgContainer"
-        src="/assets/img/creatives/pc1.png"
-      /></div></a>
-
-      <img
         class="creatives-bg-effect"
         src="/assets/img/creatives/bg-effect.png"
       />
+
+      <div class="prdImgContainer">
+        <img
+        class="creativesImg animate__animated animate__fadeIn"
+        id="prdImg"
+        src="/assets/img/creatives/pc.png"
+      />
+      <img
+        class="creativesImgA animate__animated animate__fadeIn"
+        id="prdImg1"
+        src="/assets/img/creatives/pc1.png"
+      />
+      </div>
     </div>
 
     <!-- creative item selector-->
-    <div class="container-fluid pt-5">
-      <div clas="d-flex justify-content-between">
-          <div class="col-6"> 
+    <div class="container-fluid p-5 slctrBtn animate__animated animate__fadeIn">
+      <div class="contianer d-flex justify-content-between">
+
+        <!-- left menu -->
+        <div class="row justify-content-start slctrBtn-left">
+          <div class="col"> 
             <!-- selector: pre-build-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInLeft btnContainer1"
                 onclick="btn_slctor_1()"
               >
-                <span class="ms-2 my-1 text-uppercase">Pre-Build PC</span>
-                <i class="bi bi-chevron-down m-2" id="slctorid1"></i>
+                <span class="ms-2 my-1 text-uppercase neonText4">Pre-Build PC</span>
+                <i class="bi bi-chevron-down m-2 neonText4" id="slctorid1"></i>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex" onclick="updatePrdimg()">
@@ -276,7 +279,7 @@
                 </label>
 
                 <!-- product 2 -->
-                <label class="chckbx ps-3 mt-2 d-flex">
+                <label class="chckbx ps-3 mt-2 d-flex" onclick="updatePrdimgA()">
                   <img class="img-slctor mt-2 me-3" src="/assets/img/creatives/pc1.png" />
                   <p class="text-uppercase mt-1"></p>
                   Alienware Aurora R13 Lunar Light Intel Core I9 Gaming Desktop
@@ -294,15 +297,15 @@
             </div>
 
             <!-- selector: graphic cards -->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInLeft btnContainer2"
                 onclick="btn_slctor_2()"
               >
-                <span class="ms-2 my-1 text-uppercase">Graphic Cards</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-2"></i>
+                <span class="ms-2 my-1 text-uppercase neonText1">Graphic Cards</span>
+                <i class="bi bi-chevron-down m-2 neonText1" id="slctor_id-2"></i>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -331,15 +334,15 @@
             </div>
 
             <!-- selector: processor-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInLeft btnContainer3"
                 onclick="btn_slctor_3()"
               >
-                <span class="ms-2 my-1 text-uppercase">Processor</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-3"></i>
+                <span class="ms-2 my-1 text-uppercase neonText3">Processor</span>
+                <i class="bi bi-chevron-down m-2 neonText3" id="slctor_id-3"></i>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -368,15 +371,15 @@
             </div>
 
             <!-- selector: motherboard-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInLeft btnContainer4"
                 onclick="btn_slctor_4()"
               >
-                <span class="ms-2 my-1 text-uppercase">Motherboard</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-4"></i>
+                <span class="ms-2 my-1 text-uppercase neonText2">Motherboard</span>
+                <i class="bi bi-chevron-down m-2 neonText2" id="slctor_id-4"></i>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -404,18 +407,21 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-6 ms-auto">
+        <!-- right menu -->
+        <div class="row justify-content-end slctrBtn-right">
+          <div class="col">
             <!-- selector: monitor-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
-                onclick="btn_slctor_6()"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInRight btnContainer1"
+                onclick="btn_slctor_5()"
               >
-                <span class="ms-2 my-1 text-uppercase">Monitor</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-6"></i>
+                <i class="bi bi-chevron-down m-2 neonText2" id="slctor_id-5"></i>
+                <span class="me-2 my-1 text-uppercase neonText2">Monitor</span>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -444,15 +450,15 @@
             </div>
 
             <!-- selector: storage-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
-                onclick="btn_slctor_7()"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInRight btnContainer2"
+                onclick="btn_slctor_6()"
               >
-                <span class="ms-2 my-1 text-uppercase">Storage</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-7"></i>
+                <i class="bi bi-chevron-down m-2 neonText3" id="slctor_id-6"></i>            
+                <span class="me-2 my-1 text-uppercase neonText3">Storage</span>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -481,15 +487,15 @@
             </div>
 
             <!-- selector: peripherals-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInRight btnContainer3"
                 onclick="btn_slctor_7()"
               >
-                <span class="ms-2 my-1 text-uppercase">Peripherals</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-7"></i>
+                <i class="bi bi-chevron-down m-2 neonText1" id="slctor_id-7"></i>
+                <span class="me-2 my-1 text-uppercase neonText1">Peripherals</span>            
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -518,15 +524,15 @@
             </div>
 
             <!-- selector: laptops & mobile-->
-            <div class="col-md-3 mb-4">
+            <div class="col mb-5">
               <button
-                class="dropbtn-slctor d-flex justify-content-between p-2"
+                class="dropbtn-slctor d-flex justify-content-between p-2 animate__animated animate__backInRight btnContainer4"
                 onclick="btn_slctor_8()"
               >
-                <span class="ms-2 my-1 text-uppercase">Laptops & Mobile</span>
-                <i class="bi bi-chevron-down m-2" id="slctor_id-8"></i>
+                <i class="bi bi-chevron-down m-2 neonText4" id="slctor_id-8"></i>
+                <span class="me-2 my-1 text-uppercase neonText4">Laptops & Mobile</span>
               </button>
-              <div class="slctor-filled-container">
+              <div class="slctor-filled-container neonTextfontColor">
 
                 <!-- product 1 -->
                 <label class="chckbx ps-3 mt-2 d-flex">
@@ -555,17 +561,23 @@
             </div>
           </div>
         </div>
+        
+      </div>
     </div>
 
+    <div class="creativeShpBtnCntnr animate__animated animate__fadeIn" id="ShpBtnCntnrId">
+    <button class="creativeShpBtn elCenter">
+      <div>
+        <span></span>
+        <a id="btnLink" href="###">Buy Now</a>
+      </div>
+    </button>
+  </div>
+
+
     <!-- banner footer -->
-    <div class="contianer-fluid pb-5 banner-footer">
+    <div class="contianer-fluid banner-footer">
       <div class="footer-img-brand"></div>
-      <button class="shp-btn centered">
-        <div>
-          <span></span>
-          <a href="###">Get 10% OFF</a>
-        </div>
-      </button>
     </div>
 
     <!-- page footer -->

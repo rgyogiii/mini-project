@@ -948,18 +948,18 @@ a:hover {
   height: 50%;
   top: 11% !important;
   left: 38% !important;
-  animation-duration: 5s;
-  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-delay: 1s;
 }
 
 .creativesImgA{
   position: absolute;
-  display: block;
+  display: none;
   height: 50%;
   top: 11% !important;
   left: 38% !important;
-  animation-duration: 5s;
-  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-delay: 1s;
 }
 
 .creatives-bg-effect{
@@ -974,31 +974,52 @@ a:hover {
 
 /* product selector */
 
+.btnContainer1{
+  animation-duration: 1.7s;
+  animation-delay: 4s;
+}
+
+.btnContainer2{
+  animation-duration: 1.7s;
+  animation-delay: 4.5s;
+}
+
+.btnContainer3{
+  animation-duration: 1.7s;
+  animation-delay: 5s;
+}
+
+.btnContainer4{
+  animation-duration: 1.7s;
+  animation-delay: 5.5s;
+}
+
 .img-slctor{
   height: 30px;
 }
 
 .slctor-filled-container{
   position: absolute;
-  width: 306px;
-  background-color: #ece8e1;
+  width: 18.5em;
+  background-color: #151A1C;
   display: none;
   padding: 10px 0px;
-  border: 1px solid #BDBCB7;
+  border: 1px solid #151A1C;
   border-radius: 0px 0px 5px 5px;
+  z-index: 1000;
 }
 
 .dropbtn-slctor{
   text-decoration: none;
   font-size: 16px;
-  color: #ffffff;
   display: block;
   border: none;
-  background-color: #000000;
+  background-color: #151A1C;
   width: 100%;
   text-align: left;
   cursor: pointer;
   outline: none;
+  font-weight: 500;
  }
 
  .slctrBtn{
@@ -1007,8 +1028,172 @@ a:hover {
   width: 100%;
   top: 15% !important;
   left: 0% !important;
-  z-index: 1;
+  animation-duration: 5s;
+  animation-delay: 3s;
  }
+
+ .slctrBtn-left, .slctrBtn-right{
+  width: 20em;
+ }
+
+ .neonTextfontColor {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+
+.neonText1 {
+  animation: flicker 1.5s infinite alternate;
+  color: #ffffff;
+}
+
+.neonText2 {
+  animation: flicker 2.5s infinite alternate;
+  color: #ffffff;
+}
+
+.neonText3 {
+  animation: flicker 3.5s infinite alternate;
+  color: #ffffff;
+}
+
+.neonText4 {
+  animation: flicker 4.5s infinite alternate;
+  color: #ffffff;
+}
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px  #ffffff,
+      0 0 11px  #ffffff,
+      0 0 12px #ffffff,
+      0 0 19px  #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+/* shopping button */
+
+.creativeShpBtnCntnr{
+  display: none;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.elCenter{
+  position: absolute !important;
+  top: 89% !important;
+  left: 43.8% !important;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.creativeShpBtn {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+}
+
+.creativeShpBtn::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -9px;
+  width: calc(100% + 20px);
+  height: calc(50% + 5px);
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.creativeShpBtn::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  bottom: -9px;
+  width: calc(100% + 20px);
+  height: calc(50% + 5px);
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.creativeShpBtn div {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  padding: 15px 0;
+  background: #3cb389;
+}
+
+.creativeShpBtn div::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  background: #000000;
+  transition: 0.4s;
+}
+
+.creativeShpBtn:hover div::after {
+  background: #ece8e1;
+}
+
+.creativeShpBtn div span {
+  position: absolute;
+  width: 120%;
+  height: 110%;
+  transform: translate(-100%, -20px);
+  background: #000000;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+  transition: 0.2s;
+}
+
+.creativeShpBtn:hover div span {
+  transform: translate(-10%, -20px);
+}
+
+.creativeShpBtn div a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 80px;
+}
+
+.alive{
+  display: block !important;
+}
 
  /* 
  * banner ads page */
