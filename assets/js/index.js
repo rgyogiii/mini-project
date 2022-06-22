@@ -57,6 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 })
 
+
 // * carousel
 let items = document.querySelectorAll('.carousel .carousel-item')
 
