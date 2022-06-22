@@ -133,3 +133,145 @@ const countdown = () => {
 } 
 
 setInterval(countdown,1000);
+
+
+// * Creatives Animations
+
+// animted header
+const element = document.querySelector('.creatives-bg-effect');
+
+element.classList.add('animate__animated', 'animate__fadeIn');
+
+element.addEventListener('animationend', () => {
+  element.classList.remove('animate__fadeIn');
+  element.classList.add('animate__animated', 'animate__flash', 'animate__delay-2s', 'animate__infinite', 'animate__slower');
+});
+
+// product selector
+const prdImg = document.getElementById("prdImg");
+const prdImg1 = document.getElementById("prdImg1");
+const shpbtn = document.getElementById("ShpBtnCntnrId");
+
+updatePrdimg = () => {
+
+  prdImg.classList.add("alive");
+  prdImg1.classList.remove("alive");
+
+  shpbtn.classList.add("alive");
+  document.getElementById("btnLink").href="/assets/pages/guest/product-item/pre-build-1.html";
+}
+
+updatePrdimgA = () => {
+
+  prdImg.classList.remove("alive");
+  prdImg1.classList.add("alive");
+
+  shpbtn.classList.add("alive");
+  document.getElementById("btnLink").href="/assets/pages/guest/product-item/pre-build-2.html";
+}
+
+
+//  toggler icon change for selector creatives page
+
+//  Dropdown button
+var drpdwnSlctor = document.getElementsByClassName("dropbtn-slctor");
+var i;
+
+for (i = 0; i < drpdwnSlctor.length; i++) {
+  drpdwnSlctor[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var drpdwncntnt = this.nextElementSibling;
+    if (drpdwncntnt.style.display === "block") {
+      drpdwncntnt.style.display = "none";
+    } else {
+      drpdwncntnt.style.display = "block";
+    }
+  });
+}
+
+// selector pre-build
+btn_slctor_1 = () => {
+  const slctor = document.getElementById("slctorid1")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText4") {
+    slctor.className = "bi bi-chevron-up m-2 neonText4";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText4";
+  }
+  }
+
+// selector graphic cards
+btn_slctor_2 = () => {
+  const slctor = document.getElementById("slctor_id-2")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText1") {
+    slctor.className = "bi bi-chevron-up m-2 neonText1";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText1";
+  }
+  }
+
+// selector processor
+btn_slctor_3 = () => {
+  const slctor = document.getElementById("slctor_id-3")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText3") {
+    slctor.className = "bi bi-chevron-up m-2 neonText3";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText3";
+  }
+  }
+
+// selector motherboard
+btn_slctor_4 = () => {
+  const slctor = document.getElementById("slctor_id-4")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText2") {
+    slctor.className = "bi bi-chevron-up m-2 neonText2";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText2";
+  }
+  }
+// selector monitor
+btn_slctor_5 = () => {
+  const slctor = document.getElementById("slctor_id-5")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText2") {
+    slctor.className = "bi bi-chevron-up m-2 neonText2";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText2";
+  }
+  }
+
+// selector storage
+btn_slctor_6 = () => {
+  const slctor = document.getElementById("slctor_id-6")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText3") {
+    slctor.className = "bi bi-chevron-up m-2 neonText3";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText3";
+  }
+  }
+
+// selector peripherals
+btn_slctor_7 = () => {
+  const slctor = document.getElementById("slctor_id-7")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText1") {
+    slctor.className = "bi bi-chevron-up m-2 neonText1";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText1";
+  }
+  }
+
+// selector laptops & mobile
+btn_slctor_8 = () => {
+  const slctor = document.getElementById("slctor_id-8")
+  
+  if (slctor.className == "bi bi-chevron-down m-2 neonText4") {
+    slctor.className = "bi bi-chevron-up m-2 neonText4";
+  } else {
+    slctor.className = "bi bi-chevron-down m-2 neonText4";
+  }
+  }

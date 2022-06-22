@@ -21,6 +21,33 @@ body{
 * navbar and header
  */
 
+ .neonText1 {
+  animation: flicker 1.5s infinite alternate;
+  color: #ffffff;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px  #ffffff,
+      0 0 11px  #ffffff,
+      0 0 12px #ffffff,
+      0 0 19px  #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
  /* mobile device view for navbar */
 @media (max-width: 991.98px) {
   .navbar{
@@ -115,6 +142,9 @@ body{
 
 .search-btn{
   background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .nav-link:hover{
@@ -218,21 +248,54 @@ body{
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(to bottom, rgba(236, 232, 225, 0.1) 40%, rgba(0, 0, 0, 1) 100%), url("/assets/img/bg.svg");
+  background: linear-gradient(to bottom, rgba(236, 232, 225, 0.1) 40%, rgba(0, 0, 0, 1) 100%), url("/assets/img/bg1-01.svg");
   background-position: center ;
   background-repeat: no-repeat ;
   background-size: cover ;
 }
 
+/* header animation */
+
+.creative-effect1{
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  z-index: 1;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+
+.creative-effect2{
+  position: absolute;
+  width: 25%;
+  top: 250px;
+  right: 300px;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+
+
+.effct-container{
+  position: relative;
+}
+
+.creative-effect{
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  border: none !important;
+}
+
 .mainHead h1, .mainHead .h1 {
-  font-size: 7.5rem;
+  font-size: 10rem;
   margin: 0;
   padding: 0;
   color: #ffffff !important;
 }
 
 .mainHead h3, .mainHead .h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
   color: #ffffff !important;
@@ -245,7 +308,7 @@ body{
 /* desktop view */
 /* @media (min-width: 992px) {
   .mainHead {
-    height: 100vh;
+    height: 100vh;duct 1
   }
   .mainHead h1, .mainHead .h1 {
     font-size: 4.5rem;
@@ -257,12 +320,12 @@ body{
 
 @media (max-width: 767px) {
   .headerTitle{
-    padding-top: 6.5rem !important;
+    padding-top: 5.5rem !important;
     text-align: center !important;
   }
 
   .mainHead h1, .mainHead .h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 0;
     padding: 10px;
   }
@@ -277,7 +340,7 @@ body{
 .headerTitle{
   right: 15%;
   left: 15%;
-  padding-top: 18.5rem;
+  padding-top: 16.5rem;
   color: #ffffff !important;
   text-align: center;
 }
@@ -316,10 +379,6 @@ body{
 * container-carousel
 */
 
-.carousel-cntainr{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%,  rgba(236, 232, 225, 1) 100%);
-}
-
 /* card container */
 .card-container{
   width: 18rem;
@@ -341,7 +400,7 @@ body{
 }
 
 .prev-item-icon, .next-item-icon{
-  color: #ffffff !important;
+  color: #000000 !important;
   font-size: 20px;
 }
 
@@ -380,7 +439,7 @@ body{
 /* medium and up screens */
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
+  .carouselategory-inner .carousel-item-next {
     transform: translateX(25%);
   }
   
@@ -413,29 +472,29 @@ transform: translateX(0);
 }
 
 .section-title-bestseller{
-  color: #ffffff;
+  color: #000000;
 }
 
 .section-title-category{
-  color: #000000;
+  color: #ffffff;
 }
 
 /* 
 * bestseller
 */
 
-.text-ellipsis {
+.text-ellipsis, .ellipsis-text {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   padding-left: 15px;
   padding-right: 15px; 
 }
 
 .sale-badge{
-  top: 0.5rem; 
-  right: 0.5rem;
+  top: 1rem; 
+  right: 1rem;
   background-color: #ee4d2d !important;
 }
 
@@ -506,26 +565,28 @@ a:hover{
 
 /* shop-all designs when hover*/
 .shopall:hover{
-  border-bottom: 0.1em solid #ffffff;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.spanshop:hover{
-  border-bottom: 0.1em solid transparent;
+  border-bottom: 0.1em solid #000000;
+  padding: 0px 10px;
 }
 
 .shopall{
   cursor: pointer;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px;
   margin-bottom: 5px;
   border-bottom: 0.1em solid transparent;
 }
 
+.spanshop:hover{
+  border-bottom: 0.1em solid transparent;
+  padding: 0px 10px;
+  color: #000000;
+}
+
 .spanshop{
-  border-bottom: 0.1em solid #ffffff;
-  color: #ffffff;
+  border-bottom: 0.1em solid #000000;
+  color: #000000;
+  padding: 0px 10px;
+  cursor: pointer;
 }
 
 /* 
@@ -535,6 +596,7 @@ a:hover{
   all: unset;
   position: relative;
   cursor: pointer;
+  z-index: 2;
 }
 
 .shp-btn::after {
@@ -648,13 +710,21 @@ a:hover{
 /* 
 * product categories */
 
+.product-cntainr{
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%,  rgba(236, 232, 225, 1) 100%); */
+  background-color: #010101;
+}
+
 .portfolio-caption {
   padding: 0.75rem;
   text-align: center;
-  background-color: #ECE8E1;
+  color: #010101;
+  background-color: #BDBCB7;
   border-left: 1px solid #BDBCB7;
   border-right: 1px solid #BDBCB7;
   border-bottom: 1px solid #BDBCB7;  
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .portfolio-caption-heading {
@@ -672,7 +742,10 @@ a:hover{
   height: auto;
   border-left: 1px solid #BDBCB7;
   border-right: 1px solid #BDBCB7;
-  border-top: 1px solid #BDBCB7; 
+  border-top: 1px solid #BDBCB7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #BDBCB7;
 }
 
 .category-contianer .portfolio-link .portfolio-hover {
