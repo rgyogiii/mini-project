@@ -1,0 +1,962 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>MAYARI</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo_icon.svg" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- merriweather sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- barlow font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tungsten font -->
+    <link
+      href="//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- css -->
+    <link href="/assets/css/item.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg p-1 fixed-top d-flex flex-column"
+      id="mainNav"
+    >
+      <!-- Navbar -->
+      <div class="container py-3">
+        <a class="navbar-brand" href="/assets/pages/user/index.html"
+          ><img src="/assets/img/logo-white.svg" height="30"
+        /></a>
+
+        <button
+          class="navbar-toggler p-2 border-0 burger"
+          type="button"
+          id="navbarSideCollapse"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="bi bi-list m-2 fw-bold"></i></span>
+        </button>
+
+        <!-- Navigation -->
+        <div
+          class="navbar-collapse offcanvas-collapse"
+          id="navbarsExampleDefault"
+        >
+          <!-- search box -->
+          <div class="w-75 d-flex justify-content-end searchbox-div me-3">
+            <form class="d-flex m-0 searchbox-container" role="search">
+              <input
+                class="form-control border border-0 searchbox"
+                type="search"
+                placeholder="Search here..."
+              />
+              <a href="/assets/pages/user/nav-category/sale.html">
+                <button class="btn px-2 search-btn" type="button">
+                  <i class="bi bi-search"></i></button
+              ></a>
+            </form>
+          </div>
+
+          <!-- nav list -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Product</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end border-0"
+                aria-labelledby="dropdown01"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-components.html"
+                    >Components</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-peripherals.html"
+                    >Peripherals</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-accesories.html"
+                    >Accessories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-pc-furnitures.html"
+                    >PC Furnitures</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-os-softwares.html"
+                    >OS & Softwares</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-laptops-and-mobiles.html"
+                    >Laptops & Mobile Devices</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/assets/pages/user/product/nc-pre-build.html"
+                    >Pre-Build</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown user me-0">
+              <a
+                class="nav-link"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="bi bi-person-circle"></i
+              ></a>
+              <ul
+                class="dropdown-menu dropdown-menu-end border-0 dropdown-menu-user"
+                aria-labelledby="dropdown01"
+              >
+              <li>
+                <p
+                  class="mx-3 ps-1fw-light light_text text-uppercase"
+                  >Welcome, User!</p
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item fw-light light_text text-uppercase"
+                  href="/login.html"
+                  >Signout</a
+                >
+              </li>
+
+                <li>
+                  <a
+                    class="dropdown-item fw-light light_text text-uppercase"
+                    href="#"
+                    >Help</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-0">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="bi bi-cart3 cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nav Category -->
+      <div class="mt-3 py-2 shop-list">
+        <a href="/assets/pages/user/nav-category/nav-pc-components.html" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >PC Components</label
+          ></a
+        >
+        <a
+          href="/assets/pages/user/nav-category/nav-desktop-pc.html"
+          class="mx-4"
+        >
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Desktop PC</label
+          ></a
+        >
+        <a
+          href="/assets/pages/user/nav-category/nav-laptops.html"
+          class="mx-4"
+        >
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Laptops</label
+          ></a
+        >
+        <a
+          href="/assets/pages/user/nav-category/nav-for-gamers.html"
+          class="mx-4"
+        >
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >For Gamers</label
+          ></a
+        >
+        <a
+          href="/assets/pages/user/nav-category/nav-peripherals.html"
+          class="mx-4"
+        >
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Peripherals</label
+          ></a
+        >
+        <a href="/assets/pages/user/nav-category/nav-sale.html" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Sale</label
+          ></a
+        >
+        <a href="/assets/pages/user/nav-category/nav-brands.html" class="mx-4">
+          <label class="prd_hghlights fw-light text-uppercase pointer"
+            >Brands</label
+          ></a
+        >
+      </div>
+    </nav>
+
+    <!-- product header -->
+    <div class="container product-item-display">
+      <!-- product banner -->
+      <div class="pt-3">
+        <a href="#">
+          <img
+            src="/assets/img/product/prd-banner_2.jpg"
+            class="d-block img-banner"
+        /></a>
+      </div>
+
+      <!-- breadcrumbs -->
+      <nav
+        class="my-3 pt-5"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/assets/pages/user/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Peripherals</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Mamba K-618 White/Black, Membrane Keyboard and USB Cable Mouse
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- product Item -->
+    <div class="container px-1 px-lg-2 mb-5 pt-2">
+      <div class="row gx-4 gx-lg-5 align-items-start">
+        <!-- product img -->
+        <div class="col-md-6">
+          <img
+            class="card-img-top mb-5 mb-md-0 itm-img"
+            src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/4188-a_bc6d04ab-3c75-4277-93c1-7b928be29cae_2048x2048.jpg?v=1635493538"
+            alt="..."
+          />
+        </div>
+
+        <!-- product name  -->
+        <div class="col-md-6 mx-">
+          <div class="mb-1 text-uppercase fw-bold">Mamba</div>
+          <h1 class="display-2 fw-bolder prd-title">
+            Mamba K-618 White/Black, Membrane Keyboard and USB Cable Mouse
+          </h1>
+          <div class="fs-4 mb-5 pb-3">            
+            <span class="py-2 me-3">₱869.00</span>
+          </div>
+          <div class="mt-4 mb-4 d-flex">
+            <p class="mb-1 text-uppercase py-3 me-2 fw-bold">Quantity</p>
+            <input
+              class="form-control text-center me-3 frm-cnt fw-bold"
+              type="num"
+              value="1"
+            />
+            <button
+              class="btn btn-outline-dark flex-shrink-0 ms-3 me-3 add2cart-btn"
+              type="button"
+            >
+              <i class="bi bi-cart-plus-fill me-1"></i>
+              Add to Cart
+            </button>
+
+            <button
+              class="btn btn-outline-dark flex-shrink-0 buy-btn"
+              type="button"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="container my-5">
+      <hr class="line-divider-1st" />
+    </div>
+
+    <!-- product description -->
+    <div class="container-fluid">
+      <div class="container description-">
+        <div class="d-flex flex-column justify-content-center mx-5">
+          <h1
+            class="display-6 fw-bolder prd-title text-uppercase pb-5 text-decoration-underline"
+          >
+            Product Description
+          </h1>
+          <h1 class="fs-3 fw-bolder prd-title">
+            Mamba K-618 White/Black, Membrane Keyboard and USB Cable Mouse
+          </h1>
+          <p class="lead fw-bold">Product Specification</p>
+          <li><strong>Keyboard Specifications</strong></li>
+            <li>Model: 618</li>            
+            <li>Keyboard Type: Membrane Keyboard</li>
+            <li>Multimedia keys: 10</li>            
+            <li>Interface: USB Cable</li>
+            <li><strong>Mouse Specifications</strong></li>
+            <li>Model: 618</li>            
+            <li>Interface: USB Cable</li>
+            <li>Functions: Standard 6 Keys, Roller wheels up, roller down</li>            
+            <li>Customize DPI Switch: Four gear (1200DPI/1600DPI/1800DPI/200DPI)</li>           
+          </ul>         
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="container my-5">
+      <hr class="line-divider-1st" />
+    </div>
+
+    <!-- related item -->
+    <div class="container-fluid pb-5 mb-5">
+      <div class="container py-3">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="d-inline-flex py-2">
+            <div class="me-auto">
+              <h3 class="text-uppercase m-0 related-item">Related Products</h3>
+            </div>
+
+            <div class="align-self-center"><a href="/assets/pages/user/nav-category/nav-sale.html">
+              <h6 class="text-uppercase shopall m-0 text-start">
+                <span class="spanshop">Shop All</span>
+              </h6></a>
+            </div>
+          </div>
+          <div
+            id="recipeCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="prd-carousel">
+              <!-- indicators -->
+              <div class="carousel-indicators crsl-mark">
+                <button
+                  type="button"
+                  data-bs-target="#recipeCarousel"
+                  data-bs-slide-to="0"
+                  class="active bg-dark"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#recipeCarousel"
+                  class="bg-dark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#recipeCarousel"
+                  class="bg-dark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#recipeCarousel"
+                  class="bg-dark"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#recipeCarousel"
+                  class="bg-dark"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#recipeCarousel"
+                  class="bg-dark"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
+
+              <!-- prd container -->
+              <div class="carousel-inner" role="listbox">
+                <!-- page 1 -->
+                <div class="carousel-item active">
+                  <a href="#"
+                    ><div class="card p-2 col-3 card-container border-0">
+                      <img
+                        src="/assets/img/product/1.jpg"
+                        class="card-img-top card-highlightcover"
+                      />
+                      <div class="card-body">
+                        <div class="row px-1 text-center">
+                          <p class="fs-4 text-ellipsis">
+                            RAKK Talan Air Wireless Black and White PAW3370
+                            Sensor USB Gaming Mouse and Top Cover
+                          </p>
+                        </div>
+
+                        <div class="row">
+                          <div
+                            class="pe-2 d-flex justify-content-center text-center"
+                          >
+                            <p class="solid_promo px-1 ms-1">RAKK</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_price px-1">
+                          <div class="d-flex justify-content-center">
+                            <p class="fw-bold">₱ 2,395.00</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_rating-star pb-2">
+                          <div class="d-flex justify-content-center">
+                            <div>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </div>
+                            <div class="prd_rating mx-2">
+                              <p class="fw-bold text-muted">(122 Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+
+                <!-- page 2 -->
+                <div class="carousel-item">
+                  <a href="#"
+                    ><div class="card p-2 col-3 card-container border-0">
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -8%
+                      </div>
+                      <img
+                        src="/assets/img/product/2.jpg"
+                        class="card-img-top card-highlightcover"
+                      />
+
+                      <div class="card-body">
+                        <div class="row px-1 text-center">
+                          <p class="fs-4 text-ellipsis">
+                            Team Group GX1 120gb SATA 2.5 Slim form factor,
+                            Supports TRIM, 4x faster than HDD,Reliable Internal
+                            Solid State Drive
+                          </p>
+                        </div>
+
+                        <div class="row">
+                          <div
+                            class="pe-2 d-flex justify-content-center text-center"
+                          >
+                            <p class="solid_promo px-1 ms-1">TEAM GROUP</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_price px-1">
+                          <div class="d-flex justify-content-center">
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 1,015</span
+                              >₱ 935
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_rating-star pb-2">
+                          <div class="d-flex justify-content-center">
+                            <div>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </div>
+                            <div class="prd_rating mx-2">
+                              <p class="fw-bold text-muted">(1470 Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+
+                <!-- page 3 -->
+                <div class="carousel-item">
+                  <a href="#"
+                    ><div class="card p-2 col-3 card-container border-0">
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -17%
+                      </div>
+                      <img
+                        src="/assets/img/product/3.jpg"
+                        class="card-img-top card-highlightcover"
+                      />
+
+                      <div class="card-body">
+                        <div class="row px-1 text-center">
+                          <p class="fs-4 text-ellipsis">
+                            RAKK Talan Black/White Accuracy and precision
+                            Wireless Limitless Customization Gaming Mouse and
+                            Top Cover
+                          </p>
+                        </div>
+
+                        <div class="row">
+                          <div
+                            class="pe-2 d-flex justify-content-center text-center"
+                          >
+                            <p class="solid_promo px-1 ms-1">RAKK</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_price px-1">
+                          <div class="d-inline-flex justify-content-center">
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 1,919</span
+                              >₱ 1,595
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_rating-star pb-2">
+                          <div class="d-flex justify-content-center">
+                            <div>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </div>
+                            <div class="prd_rating mx-2">
+                              <p class="fw-bold text-muted">(334 Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+
+                <!-- page 4 -->
+                <div class="carousel-item">
+                  <a href="#"
+                    ><div class="card p-2 col-3 card-container border-0">
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -7%
+                      </div>
+                      <img
+                        src="/assets/img/product/4.jpg"
+                        class="card-img-top card-highlightcover"
+                      />
+
+                      <div class="card-body">
+                        <div class="row px-1 text-center">
+                          <p class="fs-4 text-ellipsis">
+                            Nvision N190HD 19" / N185HD 18.5" / N200HD 20"/
+                            V190H 19" Monitor 60hz, | HDMI | VGA | LED Display
+                          </p>
+                        </div>
+
+                        <div class="row">
+                          <div
+                            class="pe-2 d-flex justify-content-center text-center"
+                          >
+                            <p class="solid_promo px-1 ms-1">NVISION</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_price px-1">
+                          <div class="d-inline-flex justify-content-center">
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 2,800</span
+                              >₱ 2,595
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_rating-star pb-2">
+                          <div class="d-flex justify-content-center">
+                            <div>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="prd_rating mx-2">
+                              <p class="fw-bold text-muted">(319 Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+
+                <!-- page 5 -->
+                <div class="carousel-item">
+                  <a href="#"
+                    ><div class="card p-2 col-3 card-container border-0">
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -10%
+                      </div>
+                      <img
+                        src="/assets/img/product/5.jpg"
+                        class="card-img-top card-highlightcover"
+                      />
+
+                      <div class="card-body">
+                        <div class="row px-1 text-center">
+                          <p class="fs-4 text-ellipsis">
+                            Netac N535S 120GB/240GB/480GB 2.5 Inch, 560mb read /
+                            520mb write SATA III Reliable& durable designed for
+                            personal Desktop and Laptop Solid State Drive
+                          </p>
+                        </div>
+
+                        <div class="row">
+                          <div
+                            class="pe-2 d-flex justify-content-center text-center"
+                          >
+                            <p class="solid_promo px-1 ms-1">NETAC</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_price px-1">
+                          <div class="d-inline-flex justify-content-center">
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 1,025</span
+                              >₱ 925
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_rating-star pb-2">
+                          <div class="d-flex justify-content-center">
+                            <div>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </div>
+                            <div class="prd_rating mx-2">
+                              <p class="fw-bold text-muted">(120 Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+
+                <!-- page 6 -->
+                <div class="carousel-item">
+                  <a href="#"
+                    ><div class="card p-2 col-3 card-container border-0">
+                      <div
+                        class="badge bg-dark text-white position-absolute sale-badge"
+                      >
+                        Sale -29%
+                      </div>
+                      <img
+                        src="/assets/img/product/6.jpg"
+                        class="card-img-top card-highlightcover"
+                      />
+
+                      <div class="card-body">
+                        <div class="row px-1 text-center">
+                          <p class="fs-4 text-ellipsis">
+                            Team Elite Plus 8gb 1x8 3200Mhz Ddr4 Memory
+                          </p>
+                        </div>
+
+                        <div class="row">
+                          <div
+                            class="pe-2 d-flex justify-content-center text-center"
+                          >
+                            <p class="solid_promo px-1 ms-1">TEAM ELITE</p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_price px-1">
+                          <div class="d-inline-flex justify-content-center">
+                            <p class="fw-bold">
+                              <span
+                                class="text-muted text-decoration-line-through me-3"
+                                >₱ 2,263</span
+                              >₱ 1,600
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row prd_rating-star pb-2">
+                          <div class="d-flex justify-content-center">
+                            <div>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="prd_rating mx-2">
+                              <p class="fw-bold text-muted">(924 Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- prev button -->
+            <button
+              class="carousel-control-prev prev-item"
+              type="button"
+              data-bs-target="#recipeCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                ><i class="bi bi-chevron-left prev-item-icon fs-1"></i
+              ></span>
+            </button>
+
+            <!-- next button -->
+            <button
+              class="carousel-control-next next-item"
+              type="button"
+              data-bs-target="#recipeCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                ><i class="bi bi-chevron-right next-item-icon fs-1"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product banner -->
+    <div class="container pb-5">
+      <div class="pt-5">
+        <a href="#">
+          <img
+            src="/assets/img/product/prd-banner_1.jpg"
+            class="d-block img-banner"
+        /></a>
+      </div>
+    </div>
+
+    <!-- banner footer -->
+    <div class="contianer-fluid py-5 banner-footer">
+      <div class="footer-img-brand"></div>
+      <button class="shp-btn centered">
+        <div>
+          <span></span>
+          <a href="###">Get 10% OFF</a>
+        </div>
+      </button>
+    </div>
+
+    <!-- page footer -->
+    <div class="container-fluid pt-5 page-footer">
+      <div class="container">
+        <div class="container pt-1">
+          <div class="row pb-3 justify-content-evenly">
+            <div class="row mt-2">
+              <!-- about company -->
+              <div class="col text-left pb-5">
+                <label class="fw-bold fs-6 pb-4 footer-section-title"
+                  >ABOUT MAYARI</label
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">About Us</p></a>
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Careers</p></a>
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Reviews</p></a>
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Store Locations</p></a
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">FAQs</p></a>
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Contact Us</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Privacy Policy</p></a
+                >
+              </div>
+
+              <!-- customer service-->
+              <div class="col text-left pb-5">
+                <label class="fw-bold fs-6 pb-4 footer-section-title"
+                  >CUSTOMER SERVICE</label
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Help Centre</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Payment Methods</p></a
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Delivery</p></a>
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Terms and Conditions</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Return & Refund</p></a
+                >
+                <a class="ftr_txt" href="#"
+                  ><p class="ftr_mtxt">Mayari Guarantee</p></a
+                >
+                <a class="ftr_txt" href="#"><p class="ftr_mtxt">Warranty</p></a>
+              </div>
+
+              <!-- social media -->
+              <div class="col text-left pb-3">
+                <a href="#bestSeller"
+                  ><img src="/assets/img/logo-white.svg" height="50"
+                /></a>
+
+                <div class="pb-3">
+                  <label class="fw-bold fs-6 pt-4 ps-2 footer-section-title"
+                    >FOLLOW US</label
+                  >
+                </div>
+
+                <div class="d-inline-flex w-100 flex-row justify-content-end">
+                  <div class="pe-5">
+                    <a class="ftr_txt" href="#">
+                      <p class="ftr_mtxt">
+                        <i class="bi bi-facebook footer-icon"></i>
+                        Facebook
+                      </p></a
+                    >
+                    <a class="ftr_txt" href="#"
+                      ><p class="ftr_mtxt">
+                        <i class="bi bi-instagram footer-icon"></i>
+                        Instagram
+                      </p></a
+                    >
+                  </div>
+
+                  <div class="ps-3">
+                    <a class="ftr_txt" href="#"
+                      ><p class="ftr_mtxt">
+                        <i class="bi bi-github footer-icon"></i>
+                        GitHub
+                      </p></a
+                    >
+                    <a class="ftr_txt" href="#"
+                      ><p class="ftr_mtxt">
+                        <i class="bi bi-linkedin footer-icon"></i>
+                        LinkedIn
+                      </p></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="line-divider my-0" />
+      </div>
+    </div>
+
+    <!-- credit footer -->
+    <div class="container-fluid credit-footer">
+      <div class="col text-center py-3">
+        <label class="fw-bold footer-section-credit">
+          © 2022 Mayari. All Rights Reserved.
+        </label>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

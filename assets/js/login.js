@@ -58,7 +58,7 @@ userSignIn = (e) =>{
   
   if ((email.value == validUsername) && (password.value == validPassword)) {
     alert('You Succesfully Login');
-    window.location.href = "index.html";
+    window.location.href = "/assets/pages/user/index.html";
   } else {
     errorMsgId.style.display = "block";
       }
