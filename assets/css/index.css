@@ -115,6 +115,9 @@ body{
 
 .search-btn{
   background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .nav-link:hover{
@@ -337,7 +340,7 @@ body{
 }
 
 .prev-item-icon, .next-item-icon{
-  color: #ffffff !important;
+  color: #000000 !important;
   font-size: 20px;
 }
 
