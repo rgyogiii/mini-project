@@ -421,7 +421,7 @@ transform: translateX(0);
 * bestseller
 */
 
-.text-ellipsis {
+.text-ellipsis, .ellipsis-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -768,7 +768,7 @@ a:hover{
 /* 
 * Product Item page */
 
-.product-item-display {
+.product-item-display, .ads-container {
   margin-top: 8.53rem;
 }
 

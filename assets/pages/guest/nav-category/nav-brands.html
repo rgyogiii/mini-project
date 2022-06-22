@@ -214,7 +214,10 @@
 
       <!-- Nav Category -->
       <div class="mt-3 py-2 shop-list">
-        <a href="/assets/pages/guest/product/nc-components.html" class="mx-4">
+        <a
+          href="/assets/pages/guest/nav-category/nav-pc-components.html"
+          class="mx-4"
+        >
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >PC Components</label
           ></a
@@ -257,7 +260,7 @@
           ></a
         >
         <a href="/assets/pages/guest/nav-category/nav-brands.html" class="mx-4">
-          <label class="prd_hghlights fw-light text-uppercase pointer"
+          <label class="prd_hghlights fw-light text-uppercase pointer active"
             >Brands</label
           ></a
         >
@@ -346,6 +349,28 @@
           <li class="breadcrumb-item active" aria-current="page">Brands</li>
         </ol>
       </nav>
+
+      <!-- product nav content -->
+      <div class="container prd_cntnt-bg">
+        <div class="d-flex justify-content-end">
+          <div class="align-self-center">
+            <label class="text-left fw-bold text-muted"> Sort by </label>
+            <a class="p-1 m-2 ctg_txt" href="#!">Popular</a>
+            <a class="p-1 m-2 ctg_txt" href="#!">Latest</a>
+            <a class="p-1 m-2 ctg_txt" href="#!">Top Sales</a>
+          </div>
+          <div class="dropdown prc_drpbtn m-2 py-2 prc_drpbtn-border">
+            <button class="dropbtn ms-2">
+              Prices
+              <i class="bi bi-chevron-down ps-5 ms-3"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Price: Low to High</a>
+              <a href="#">Price: High to Low</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Category -->
       <div class="container pb-2">

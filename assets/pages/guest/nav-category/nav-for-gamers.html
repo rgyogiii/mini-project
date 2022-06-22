@@ -219,7 +219,10 @@
 
       <!-- Nav Category -->
       <div class="mt-3 py-2 shop-list">
-        <a href="/assets/pages/guest/product/nc-components.html" class="mx-4">
+        <a
+          href="/assets/pages/guest/nav-category/nav-pc-components.html"
+          class="mx-4"
+        >
           <label class="prd_hghlights fw-light text-uppercase pointer"
             >PC Components</label
           ></a
@@ -244,7 +247,7 @@
           href="/assets/pages/guest/nav-category/nav-for-gamers.html"
           class="mx-4"
         >
-          <label class="prd_hghlights fw-light text-uppercase pointer"
+          <label class="prd_hghlights fw-light text-uppercase pointer active"
             >For Gamers</label
           ></a
         >
@@ -495,16 +498,54 @@
         </div>
       </div>
 
+      <!-- product banner -->
+      <div class="container pb-4">
+        <div class="pt-5">
+          <a href="#">
+            <img
+              src="/assets/img/product/prd-banner_2.jpg"
+              class="d-block img-banner"
+          /></a>
+        </div>
+      </div>
+
+      <!-- divider -->
+      <div class="container my-5">
+        <hr class="line-divider-1st" />
+      </div>
+
       <!-- page title -->
       <div class="me-auto mb-2">
-        <h3 class="text-uppercase m-0 section-title-bestseller">For Gamers</h3>
+        <h3 class="text-uppercase m-0 section-title-bestseller">Products</h3>
+      </div>
+
+      <!-- product nav content -->
+      <div class="container prd_cntnt-bg">
+        <div class="d-flex justify-content-end">
+          <div class="align-self-center">
+            <label class="text-left fw-bold text-muted"> Sort by </label>
+            <a class="p-1 m-2 ctg_txt" href="#!">Popular</a>
+            <a class="p-1 m-2 ctg_txt" href="#!">Latest</a>
+            <a class="p-1 m-2 ctg_txt" href="#!">Top Sales</a>
+          </div>
+          <div class="dropdown prc_drpbtn m-2 py-2 prc_drpbtn-border">
+            <button class="dropbtn ms-2">
+              Prices
+              <i class="bi bi-chevron-down ps-5 ms-3"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Price: Low to High</a>
+              <a href="#">Price: High to Low</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- product contianer -->
       <div class="container mt-2">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <!-- product content -->
-          <div class="col-10 px-3">
+          <div class="col px-3">
             <!-- product -->
             <div
               class="row gx-3 gx-lg-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-start"

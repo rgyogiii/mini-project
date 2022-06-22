@@ -420,7 +420,7 @@ transform: translateX(0);
 * bestseller
 */
 
-.text-ellipsis {
+.text-ellipsis, .ellipsis-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;

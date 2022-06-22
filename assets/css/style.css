@@ -205,10 +205,10 @@ body {
 /* mainNav dropdown-items display when active */
 .dropdown-item.active,
 .dropdown-item:active {
-  color: #000000;
-  background-color: transparent;
-  border-left: 0.25rem solid #3cb389;
-  margin: 10px 20px;
+  color: #000000 !important;
+  background-color: transparent !important;
+  border-left: 0.25rem solid #3cb389 !important;
+  margin: 10px 20px !important;
 }
 
 .light_text {
@@ -220,6 +220,10 @@ body {
   color: #949494;
   border-bottom: 0.25rem solid #3cb389;
   cursor: pointer;
+}
+
+.pointer.active,.pointer:active{
+  border-bottom: 0.25rem solid #3cb389;
 }
 
 /* a tag design */
@@ -237,6 +241,13 @@ a:hover {
 
 /* 
 * body */
+
+/* category title */
+.section-title-bestseller, .section-title-category{
+  font-family: var(--font-tungsten);
+  font-size: 3.4rem;
+}
+
 
 /* 
 * Carousel base class */
@@ -307,7 +318,7 @@ a:hover {
 }
 
 /* product title */
-.ellipsis-text {
+.text-ellipsis, .ellipsis-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -490,10 +501,13 @@ a:hover {
 .portfolio-caption {
   padding: 0.75rem;
   text-align: center;
-  background-color: #ECE8E1;
+  color: #010101;
+  background-color: transparent;
   border-left: 1px solid #BDBCB7;
   border-right: 1px solid #BDBCB7;
   border-bottom: 1px solid #BDBCB7;  
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .portfolio-caption-heading {
@@ -511,7 +525,10 @@ a:hover {
   height: auto;
   border-left: 1px solid #BDBCB7;
   border-right: 1px solid #BDBCB7;
-  border-top: 1px solid #BDBCB7; 
+  border-top: 1px solid #BDBCB7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: transparent;
 }
 
 .category-contianer .portfolio-link .portfolio-hover {
