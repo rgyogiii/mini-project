@@ -158,7 +158,7 @@ updatePrdimg = () => {
   prdImg1.classList.remove("alive");
 
   shpbtn.classList.add("alive");
-  document.getElementById("btnLink").href="/assets/pages/guest/index.html";
+  document.getElementById("btnLink").href="/assets/pages/guest/product-item/pre-build-1.html";
 }
 
 updatePrdimgA = () => {
@@ -167,7 +167,7 @@ updatePrdimgA = () => {
   prdImg1.classList.add("alive");
 
   shpbtn.classList.add("alive");
-  document.getElementById("btnLink").href="/assets/pages/guest/index.html";
+  document.getElementById("btnLink").href="/assets/pages/guest/product-item/pre-build-2.html";
 }
 
 
