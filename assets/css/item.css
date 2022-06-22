@@ -432,7 +432,7 @@ transform: translateX(0);
 
 .sale-badge{
   top: 1rem; 
-  left: 1rem;
+  right: 1rem;
   background-color: #ee4d2d !important;
 }
 

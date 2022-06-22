@@ -312,8 +312,8 @@ a:hover {
 }
 
 .sale-badge {
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 1rem;
+  right: 1rem;
   background-color: #ee4d2d !important;
 }
 
@@ -585,8 +585,11 @@ a:hover {
   background-color: transparent;
 }
 
-.mm_range {
+.mm_range, .mm_range:focus  {
   font-size: 12px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
  /* 
@@ -984,6 +987,7 @@ a:hover {
   height: 100%;
   top: -22% !important;
   left: 28% !important;
+  opacity: 0.25;
   z-index: 1;
   animation-duration: 2s;
   animation-delay: 2s;
